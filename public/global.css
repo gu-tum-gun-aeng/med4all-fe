@@ -12,52 +12,20 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-a {
-	color: rgb(0,100,200);
-	text-decoration: none;
-}
 
-a:hover {
-	text-decoration: underline;
-}
+/*  
+Override IBM Component style here
+*/
 
-a:visited {
-	color: rgb(0,80,160);
+.bx--label {
+	font-family: 'IBM Plex Sans Thai';
 }
-
-label {
-	display: block;
+.bx--file--label {
+	font-family: 'IBM Plex Sans Thai';
 }
-
-input, button, select, textarea {
-	font-family: inherit;
-	font-size: inherit;
-	-webkit-padding: 0.4em 0;
-	padding: 0.4em;
-	margin: 0 0 0.5em 0;
-	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 2px;
+.bx--label-description {
+	font-family: 'IBM Plex Sans Thai';
 }
-
-input:disabled {
-	color: #ccc;
-}
-
-button {
-	color: #333;
-	background-color: #f4f4f4;
-	outline: none;
-}
-
-button:disabled {
-	color: #999;
-}
-
-button:not(:disabled):active {
-	background-color: #ddd;
-}
-
-button:focus {
-	border-color: #666;
+.bx--form-item {
+	margin-top: 30px;
 }

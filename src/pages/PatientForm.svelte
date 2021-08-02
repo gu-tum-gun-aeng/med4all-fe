@@ -1,30 +1,45 @@
 <script lang="ts">
-    import { TextInput, Form, FormGroup, NumberInput, FileUploader } from "carbon-components-svelte";
+    import {
+        TextInput,
+        Form,
+        NumberInput,
+        FileUploader,
+        Button,
+        Row,
+        Column
+    } from "carbon-components-svelte";
+
+    let nationalIdCardImage = []
+
+    const handleOnSubmit = () => {
+        console.log(nationalIdCardImage)
+	}
 </script>
 
 <main>
 	<h1>กรอกฟอร์มหน่อยจ้าแฮะๆ</h1>
     <div class="patient-form">
-        <Form on:submit>
+        <div class="file-uploader">
+            <FileUploader
+                labelTitle="อัพโหลดรูปบัตรประชาชน"
+                buttonLabel="อัพโหลดรูปบัตรประชาชน"
+                labelDescription="ขอนามสกุลไฟล์เป็น .jpg และ .png  ขนาดไม่เกิน 10mb"
+                accept={['.jpg', '.jpeg', 'png']}
+                status="complete"
+                bind:files={nationalIdCardImage}
+            />
+        </div>
+        <div class="file-uploader">
+            <FileUploader
+                labelTitle="อัพโหลดรูปทดสอบแอนติเจน"
+                buttonLabel="อัพโหลดรูปทดสอบแอนติเจน"
+                labelDescription="ขอนามสกุลไฟล์เป็น .jpg และ .png  ขนาดไม่เกิน 10mb"
+                accept={['.jpg', '.jpeg', 'png']}
+                status="complete"
+            />
+        </div>
+        <Form on:submit={handleOnSubmit}>
             <div class="form-basic-info">
-                <div class="file-uploader">
-                    <FileUploader
-                        labelTitle="อัพโหลดรูปบัตรประชาชน"
-                        buttonLabel="อัพโหลดรูปบัตรประชาชน"
-                        labelDescription="ขอนามสกุลไฟล์เป็น .jpg และ .png  ขนาดไม่เกิน 10mb"
-                        accept={['.jpg', '.jpeg', 'png']}
-                        status="complete"
-                    />
-                </div>
-                <div class="file-uploader">
-                    <FileUploader
-                        labelTitle="อัพโหลดรูปทดสอบแอนติเจน"
-                        buttonLabel="อัพโหลดรูปทดสอบแอนติเจน"
-                        labelDescription="ขอนามสกุลไฟล์เป็น .jpg และ .png  ขนาดไม่เกิน 10mb"
-                        accept={['.jpg', '.jpeg', 'png']}
-                        status="complete"
-                    />
-                </div>
                 <TextInput labelText="เลขบัตรประชาชน" placeholder="" />
                 <TextInput labelText="ชื่อจริง" placeholder="" />
                 <TextInput labelText="นามสกุล" placeholder="" />
@@ -38,11 +53,24 @@
                 <TextInput labelText="จังหวัด" placeholder="" />
                 <TextInput labelText="รหัสไปรษณีย์" placeholder="" />
             </div>
+            <div class="form-address">
+                <h2>ข้อมูลทางการแพทย์</h2>
+                <Row>
+                    <Column>
+                        <NumberInput max={1000} min={0} label="น้ำหนัก (หน่วยกิโลกรัม, kg)" />
+                    </Column>
+                    <Column>
+                        <NumberInput max={1000} min={0} label="ส่วนสูง (หน่วยเซนติเมตร, cm)" />
+                    </Column>
+                </Row>
+            </div>
+            <Button type="submit">ส่งข้อมูล</Button>
         </Form>
     </div>
 </main>
 
 <style scoped>
+
     main {
         padding: 40px;    
     }
@@ -50,7 +78,6 @@
     .patient-form {
         margin-top: 30px;
     }
-
     .file-uploader {
         margin-bottom: 30px;
     }
