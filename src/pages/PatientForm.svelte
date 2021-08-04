@@ -8,10 +8,12 @@
         Row,
         Column
     } from "carbon-components-svelte";
+    import InputTags from "../components/InputTags.svelte";
 
     let nationalIdCardImage = []
 
-    const handleOnSubmit = () => {
+    const handleOnSubmit = (event) => {
+        console.log(event.target)
         console.log(nationalIdCardImage)
 	}
 </script>
@@ -53,7 +55,7 @@
                 <TextInput labelText="จังหวัด" placeholder="" />
                 <TextInput labelText="รหัสไปรษณีย์" placeholder="" />
             </div>
-            <div class="form-address">
+            <div class="form-medical-info">
                 <h2>ข้อมูลทางการแพทย์</h2>
                 <Row>
                     <Column>
@@ -63,6 +65,11 @@
                         <NumberInput max={1000} min={0} label="ส่วนสูง (หน่วยเซนติเมตร, cm)" />
                     </Column>
                 </Row>
+                <Row>
+                    <Column>
+                        <InputTags />
+                    </Column>
+                </Row>
             </div>
             <Button type="submit">ส่งข้อมูล</Button>
         </Form>
@@ -70,7 +77,6 @@
 </main>
 
 <style scoped>
-
     main {
         padding: 40px;    
     }
@@ -88,6 +94,11 @@
     }
 
     .form-address {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .form-medical-info {
         margin-top: 40px;
         margin-bottom: 40px;
     }
