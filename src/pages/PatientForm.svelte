@@ -8,14 +8,31 @@
         Row,
         Column
     } from "carbon-components-svelte";
+    import { uploadImage, } from "../api/patient"
+    import type { UploadImageSuccessResponseData } from "../api/patient"
     import InputTags from "../components/InputTags.svelte";
 
-    let nationalIdCardImage = []
+    let nationalIdCardImages: File[] = []
+    let antigenTestingImages: File[] = []
+
+    let imageUrl = {
+        uploadedNationalIdCard: "",
+        uploadedAntigenTesting: ""
+    }   
 
     const handleOnSubmit = (event) => {
-        console.log(event.target)
-        console.log(nationalIdCardImage)
+        console.log(imageUrl)
 	}
+
+    const handleFileUpload = async (files: File[], uploadedUrl: string) => {
+        const [file] = files;
+        const formData = new FormData()
+        formData.append(file.name, file)
+        const response = await uploadImage(formData)
+        const data: UploadImageSuccessResponseData = response.data
+        const [{ url }] = data.results
+        imageUrl[uploadedUrl] = url
+    }
 </script>
 
 <main>
@@ -28,7 +45,8 @@
                 labelDescription="ขอนามสกุลไฟล์เป็น .jpg และ .png  ขนาดไม่เกิน 10mb"
                 accept={['.jpg', '.jpeg', 'png']}
                 status="complete"
-                bind:files={nationalIdCardImage}
+                bind:files={nationalIdCardImages}
+                on:add={() => handleFileUpload(nationalIdCardImages, "uploadedNationalIdCard")}
             />
         </div>
         <div class="file-uploader">
@@ -38,6 +56,8 @@
                 labelDescription="ขอนามสกุลไฟล์เป็น .jpg และ .png  ขนาดไม่เกิน 10mb"
                 accept={['.jpg', '.jpeg', 'png']}
                 status="complete"
+                bind:files={antigenTestingImages}
+                on:add={() => handleFileUpload(antigenTestingImages, "uploadedAntigenTesting")}
             />
         </div>
         <Form on:submit={handleOnSubmit}>
@@ -84,10 +104,11 @@
     .patient-form {
         margin-top: 30px;
     }
+
     .file-uploader {
         margin-bottom: 30px;
     }
-    
+
     .form-basic-info {
         margin-top: 20px;
         margin-bottom: 20px;
