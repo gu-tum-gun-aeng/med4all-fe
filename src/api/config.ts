@@ -1,5 +1,5 @@
-const hostUrl =  "api.gu-aeng.ninja"
-const version = "v1"
+const hostUrl: Readonly<string> =  "api.gu-aeng.ninja"
+const version: Readonly<string> = "v1"
 
 export default {
     hostUrl,

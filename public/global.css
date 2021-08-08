@@ -32,8 +32,11 @@ Override IBM Component style here
 	margin-top: 30px;
 }
 .bx--btn--primary {
-	font-family: var(--main-font)'
+	font-family: var(--main-font);
 }
 .bx--tag {
+	font-family: var(--main-font);
+}
+.bx--btn {
 	font-family: var(--main-font);
 }

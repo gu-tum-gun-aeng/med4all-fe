@@ -11,6 +11,7 @@
     import { uploadImage, } from "../api/patient"
     import type { UploadImageSuccessResponseData } from "../api/patient"
     import InputTags from "../components/InputTags.svelte";
+    import ImageUploader from "../components/ImageUploader.svelte";
 
     let nationalIdCardImages: File[] = []
     let antigenTestingImages: File[] = []
@@ -18,20 +19,28 @@
     let imageUrl = {
         uploadedNationalIdCard: "",
         uploadedAntigenTesting: ""
-    }   
+    } as const
+
+    let nationalIdCardUploadStatus: "complete" | "edit" | "uploading" = "complete"
 
     const handleOnSubmit = (event) => {
         console.log(imageUrl)
 	}
 
     const handleFileUpload = async (files: File[], uploadedUrl: string) => {
+        nationalIdCardUploadStatus = "uploading"
         const [file] = files;
+        if (!file) {
+            nationalIdCardUploadStatus = "complete"
+            return
+        }
         const formData = new FormData()
         formData.append(file.name, file)
         const response = await uploadImage(formData)
         const data: UploadImageSuccessResponseData = response.data
         const [{ url }] = data.results
         imageUrl[uploadedUrl] = url
+        nationalIdCardUploadStatus = "complete"
     }
 </script>
 
@@ -39,13 +48,20 @@
 	<h1>กรอกฟอร์มหน่อยจ้าแฮะๆ</h1>
     <div class="patient-form">
         <div class="file-uploader">
+            <ImageUploader 
+                labelText="อัพโหลดรูปบัตรประชาชน"
+                accept=".jpg,.jpeg,.png"
+            />
+        </div>
+        <div class="file-uploader">
             <FileUploader
                 labelTitle="อัพโหลดรูปบัตรประชาชน"
                 buttonLabel="อัพโหลดรูปบัตรประชาชน"
                 labelDescription="ขอนามสกุลไฟล์เป็น .jpg และ .png  ขนาดไม่เกิน 10mb"
                 accept={['.jpg', '.jpeg', 'png']}
-                status="complete"
+                name="กด"
                 bind:files={nationalIdCardImages}
+                bind:status={nationalIdCardUploadStatus}
                 on:add={() => handleFileUpload(nationalIdCardImages, "uploadedNationalIdCard")}
             />
         </div>
