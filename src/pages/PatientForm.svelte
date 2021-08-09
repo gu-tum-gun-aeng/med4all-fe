@@ -49,31 +49,18 @@
     <div class="patient-form">
         <div class="file-uploader">
             <ImageUploader 
-                labelText="อัพโหลดรูปบัตรประชาชน"
-                accept=".jpg,.jpeg,.png"
-            />
-        </div>
-        <div class="file-uploader">
-            <FileUploader
                 labelTitle="อัพโหลดรูปบัตรประชาชน"
+                accept=".jpg,.jpeg,.png"
                 buttonLabel="อัพโหลดรูปบัตรประชาชน"
                 labelDescription="ขอนามสกุลไฟล์เป็น .jpg และ .png  ขนาดไม่เกิน 10mb"
-                accept={['.jpg', '.jpeg', 'png']}
-                name="กด"
-                bind:files={nationalIdCardImages}
-                bind:status={nationalIdCardUploadStatus}
-                on:add={() => handleFileUpload(nationalIdCardImages, "uploadedNationalIdCard")}
             />
         </div>
         <div class="file-uploader">
-            <FileUploader
+            <ImageUploader 
                 labelTitle="อัพโหลดรูปทดสอบแอนติเจน"
+                accept=".jpg,.jpeg,.png"
                 buttonLabel="อัพโหลดรูปทดสอบแอนติเจน"
                 labelDescription="ขอนามสกุลไฟล์เป็น .jpg และ .png  ขนาดไม่เกิน 10mb"
-                accept={['.jpg', '.jpeg', 'png']}
-                status="complete"
-                bind:files={antigenTestingImages}
-                on:add={() => handleFileUpload(antigenTestingImages, "uploadedAntigenTesting")}
             />
         </div>
         <Form on:submit={handleOnSubmit}>

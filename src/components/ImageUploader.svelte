@@ -1,7 +1,9 @@
 <script lang="ts">
     import { Button, FileUploaderItem } from "carbon-components-svelte";
 
-    export let labelText: string = "";
+    export let labelTitle: string = "";
+    export let labelDescription: string = "";
+    export let buttonLabel: string = "";
     export let accept: string = "";
 
     let fileUploadingStatus: "complete" | "edit" | "uploading" = "complete"
@@ -26,8 +28,10 @@
 </script>
 
 <div class="image-uploader-container">
+    <h1>{labelTitle}</h1>
+    <p>{labelDescription}</p>
     <Button on:click={() => fileUploadRef.click()}>
-        {labelText}
+        {buttonLabel}
     </Button>
     <input
         class="image-uploader-input"
@@ -48,6 +52,18 @@
     .image-uploader-container {
         display: flex;
         flex-direction: column;
+    }
+
+    h1 {
+        font-family: 'IBM Plex Sans Thai';
+        font-size: 18px;
+        padding-bottom: 10px;
+        font-weight: 600;
+    }
+    p {
+        font-family: 'IBM Plex Sans Thai';
+        font-size: 14px;
+        padding-bottom: 10px;
     }
 
     .image-uploader-input {
