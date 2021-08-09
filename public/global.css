@@ -17,6 +17,7 @@ Override IBM Component style here
 
 :root {
 	--main-font: 'IBM Plex Sans Thai';
+	--main-background-color: #f4f4f4;
 }
 
 .bx--label {
@@ -39,4 +40,7 @@ Override IBM Component style here
 }
 .bx--btn {
 	font-family: var(--main-font);
+}
+.bx--text-input-wrapper--readonly input.bx--text-input {
+	background: var(--main-background-color);
 }

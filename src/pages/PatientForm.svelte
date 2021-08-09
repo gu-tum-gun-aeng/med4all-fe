@@ -3,18 +3,47 @@
         TextInput,
         Form,
         NumberInput,
-        FileUploader,
         Button,
         Row,
-        Column
+        Column,
+        Select,
+        SelectItem
     } from "carbon-components-svelte";
     import { uploadImage, } from "../api/patient"
     import type { UploadImageSuccessResponseData } from "../api/patient"
     import InputTags from "../components/InputTags.svelte";
     import ImageUploader from "../components/ImageUploader.svelte";
+    import { searchAddressByZipcode } from "thai-address-database"
+    import type { Addresses, AddressItem } from "../types/address"
 
     let nationalIdCardImages: File[] = []
     let antigenTestingImages: File[] = []
+
+    let zipcode: string = "";
+    let addressItems: Addresses = [];
+    $: {
+        if (zipcode.length === 5) {
+            addressItems = searchAddressByZipcode(zipcode);
+        } else {
+            addressItems = []
+        }
+    }
+    let district: string = "";
+    let amphoe: string = "";
+    let province: string = "";
+    let subAddressItems: Addresses = [];
+    $: {
+        subAddressItems = addressItems.filter(
+            (addressItem: AddressItem) => addressItem.district === district
+        )
+        if (subAddressItems.length > 0) {
+            amphoe = subAddressItems[0].amphoe
+            province = subAddressItems[0].province
+        } else {
+            amphoe = ""
+            province = ""
+        }
+    }
 
     let imageUrl = {
         uploadedNationalIdCard: "",
@@ -73,10 +102,19 @@
             <div class="form-address">
                 <h2>ที่อยู่อาศัย</h2>
                 <TextInput labelText="ที่อยู่" placeholder="" />
-                <TextInput labelText="ตำบล" placeholder="" />
-                <TextInput labelText="อำเภอ" placeholder="" />
-                <TextInput labelText="จังหวัด" placeholder="" />
-                <TextInput labelText="รหัสไปรษณีย์" placeholder="" />
+                <TextInput labelText="รหัสไปรษณีย์" placeholder="" bind:value={zipcode} />
+                <Select
+                    labelText="ตำบล"
+                    disabled={addressItems.length === 0}
+                    bind:selected={district}
+                >
+                    <SelectItem value={""} text={"กรุณาเลือกตำบลให้หน่อย"} />
+                    {#each addressItems as addressItem}
+                        <SelectItem value={addressItem.district} text={addressItem.district} />
+                    {/each}
+                </Select>
+                <TextInput disabled={subAddressItems.length === 0} bind:value={amphoe} readonly labelText="อำเภอ"/>
+                <TextInput disabled={subAddressItems.length === 0} bind:value={province} readonly labelText="จังหวัด"/>
             </div>
             <div class="form-medical-info">
                 <h2>ข้อมูลทางการแพทย์</h2>
