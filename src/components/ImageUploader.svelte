@@ -1,78 +1,87 @@
 <script lang="ts">
-    import { Button, FileUploaderItem } from "carbon-components-svelte";
+  import { Button, FileUploaderItem } from "carbon-components-svelte";
 
-    export let labelTitle: string = "";
-    export let labelDescription: string = "";
-    export let buttonLabel: string = "";
-    export let accept: string = "";
+  export let labelTitle: string = "";
+  export let labelDescription: string = "";
+  export let buttonLabel: string = "";
+  export let accept: string = "";
 
-    let fileUploadingStatus: "complete" | "edit" | "uploading" = "complete"
-    let fileUploadRef: HTMLInputElement = null;
+  let fileUploadingStatus: "complete" | "edit" | "uploading" = "complete";
+  let fileUploadRef: HTMLInputElement = null;
 
-    let uploadedImage
+  let uploadedImage;
 
-    let files: File[];
-    $: files = [];
+  let files: File[];
+  $: files = [];
 
-    const handleUpload = () => {
-        fileUploadingStatus = "uploading"
-        files = Array.from(fileUploadRef.files)
-        const [image] = files
-        const reader = new FileReader();
-        reader.readAsDataURL(image);
-        reader.onload = e => {
-            uploadedImage = e.target.result
-        };
-        fileUploadingStatus = "complete"
-    }
+  const handleUpload = () => {
+    fileUploadingStatus = "uploading";
+    files = Array.from(fileUploadRef.files);
+    const [image] = files;
+    const reader = new FileReader();
+    reader.readAsDataURL(image);
+    reader.onload = (e) => {
+      uploadedImage = e.target.result;
+    };
+    fileUploadingStatus = "complete";
+  };
 </script>
 
 <div class="image-uploader-container">
-    <h1>{labelTitle}</h1>
-    <p>{labelDescription}</p>
-    <Button on:click={() => fileUploadRef.click()}>
-        {buttonLabel}
-    </Button>
-    <input
-        class="image-uploader-input"
-        type="file"
-        accept={accept}
-        on:change={handleUpload}
-        bind:this={fileUploadRef}
-    />
-    <div>
-        {#each files as file}
-            <FileUploaderItem bind:name={file.name} bind:status={fileUploadingStatus}/>
-            <img width={320} height={300} class="preview-image" src="{uploadedImage}" alt="d" />
-        {/each}
-    </div>
+  <h1>{labelTitle}</h1>
+  <p>{labelDescription}</p>
+  <Button on:click={() => fileUploadRef.click()}>
+    {buttonLabel}
+  </Button>
+  <input
+    class="image-uploader-input"
+    type="file"
+    {accept}
+    on:change={handleUpload}
+    bind:this={fileUploadRef}
+  />
+  <div>
+    {#each files as file}
+      <FileUploaderItem
+        bind:name={file.name}
+        bind:status={fileUploadingStatus}
+      />
+      <img
+        width={320}
+        height={300}
+        class="preview-image"
+        src={uploadedImage}
+        alt="d"
+      />
+    {/each}
+  </div>
 </div>
 
 <style scoped>
-    .image-uploader-container {
-        display: flex;
-        flex-direction: column;
-    }
+  .image-uploader-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-    h1 {
-        font-family: 'IBM Plex Sans Thai';
-        font-size: 18px;
-        padding-bottom: 10px;
-        font-weight: 600;
-    }
-    p {
-        font-family: 'IBM Plex Sans Thai';
-        font-size: 14px;
-        padding-bottom: 10px;
-    }
+  h1 {
+    font-family: "IBM Plex Sans Thai";
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: 600;
+  }
+  p {
+    font-family: "IBM Plex Sans Thai";
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
 
-    .image-uploader-input {
-        display: none;
-    }
+  .image-uploader-input {
+    display: none;
+  }
 
-    .preview-image {
-        object-fit: cover;
-        width: 320px;
-        height: 300px;
-    }
+  .preview-image {
+    object-fit: cover;
+    width: 320px;
+    height: 300px;
+  }
 </style>

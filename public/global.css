@@ -19,7 +19,6 @@ Override IBM Component style here
 	--main-font: 'IBM Plex Sans Thai';
 	--main-background-color: #f4f4f4;
 }
-
 .bx--label {
 	font-family: var(--main-font);
 }
@@ -39,6 +38,13 @@ Override IBM Component style here
 	font-family: var(--main-font);
 }
 .bx--btn {
+	font-family: var(--main-font);
+}
+.bx--checkbox-label-text {
+	font-family: var(--main-font);
+	margin-top: 2px;
+}
+.bx--tile--selectable {
 	font-family: var(--main-font);
 }
 .bx--text-input-wrapper--readonly input.bx--text-input {
