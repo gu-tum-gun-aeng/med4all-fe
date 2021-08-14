@@ -3,7 +3,7 @@
 Install the dependencies...
 
 ```bash
-yarn
+npm i
 ```
 ...then start [Rollup](https://rollupjs.org):
 
