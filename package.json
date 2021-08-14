@@ -8,8 +8,8 @@
     "start": "sirv public --no-clear",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "test": "jest",
-    "format": "prettier --write --plugin-search-dir=. src/**/*.{svelte,ts}",
-    "format-check": "prettier --check src/**/*.{svelte,ts}",
+    "format": "prettier --write --plugin-search-dir=. '{,!(node_modules)/**/}*.{ts,svelte}'",
+    "format-check": "prettier --check **/*.{svelte,ts}",
     "lint": "eslint -c ./.eslintrc.js src/",
     "lint-fix": "eslint --fix -c ./.eslintrc.js src/"
   },
