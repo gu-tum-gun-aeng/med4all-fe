@@ -1,7 +1,7 @@
 <script lang="ts">
   import { TextInput, Tag } from "carbon-components-svelte";
 
-  let input: string = "";
+  let input = "";
   let tags: string[] = [];
 
   const handleKeydown = (event) => {

@@ -14,10 +14,12 @@
   import type { Addresses, AddressItem } from "../types/address";
   import Questionnaire from "../components/Questionnaire.svelte";
 
+  /* eslint-disable no-unused-vars */
   let nationalIdCardImages: File[] = [];
+  /* eslint-disable no-unused-vars */
   let antigenTestingImages: File[] = [];
 
-  let zipcode: string = "";
+  let zipcode = "";
   let addressItems: Addresses = [];
   $: {
     if (zipcode.length === 5) {
@@ -26,9 +28,9 @@
       addressItems = [];
     }
   }
-  let district: string = "";
-  let amphoe: string = "";
-  let province: string = "";
+  let district = "";
+  let amphoe = "";
+  let province = "";
   let subAddressItems: Addresses = [];
   $: {
     subAddressItems = addressItems.filter(
@@ -51,10 +53,11 @@
   let nationalIdCardUploadStatus: "complete" | "edit" | "uploading" =
     "complete";
 
-  const handleOnSubmit = (event) => {
+  const handleOnSubmit = () => {
     console.log(imageUrl);
   };
 
+  /* eslint-disable no-unused-vars */
   const handleFileUpload = async (files: File[], uploadedUrl: string) => {
     nationalIdCardUploadStatus = "uploading";
     const [file] = files;

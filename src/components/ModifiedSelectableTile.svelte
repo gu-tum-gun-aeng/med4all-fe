@@ -18,7 +18,7 @@
 
 <input
   bind:this={ref}
-  bind:group={group}
+  bind:group
   type="checkbox"
   tabindex="-1"
   class:bx--tile-input={true}
@@ -44,10 +44,10 @@
     if (disabled) return;
     selected = !selected;
     if (group.some((val) => val === value)) {
-      group = group.filter((val) => val !== value)
-      return
+      group = group.filter((val) => val !== value);
+      return;
     }
-    group = [...group, value]
+    group = [...group, value];
   }}
   on:mouseover
   on:mouseenter
@@ -58,6 +58,11 @@
     if (e.key === " " || e.key === "Enter") {
       e.preventDefault();
       selected = !selected;
+      if (group.some((val) => val === value)) {
+        group = group.filter((val) => val !== value);
+        return;
+      }
+      group = [...group, value];
     }
   }}
 >

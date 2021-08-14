@@ -1,10 +1,10 @@
 <script lang="ts">
   import { Button, FileUploaderItem } from "carbon-components-svelte";
 
-  export let labelTitle: string = "";
-  export let labelDescription: string = "";
-  export let buttonLabel: string = "";
-  export let accept: string = "";
+  export let labelTitle = "";
+  export let labelDescription = "";
+  export let buttonLabel = "";
+  export let accept = "";
 
   let fileUploadingStatus: "complete" | "edit" | "uploading" = "complete";
   let fileUploadRef: HTMLInputElement = null;

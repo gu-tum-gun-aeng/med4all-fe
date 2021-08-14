@@ -1,17 +1,18 @@
-import axios from "axios"
-import Config from "./config"
+import axios from "axios";
+import Config from "./config";
 
-export const uploadImage = async (formData) => await axios.post(
+export const uploadImage = async (formData) =>
+  await axios.post(
     `https://${Config.hostUrl}/${Config.version}/patients/upload`,
     formData,
-    {  headers: { "Content-Type": "multipart/form-data" } }
-)
+    { headers: { "Content-Type": "multipart/form-data" } }
+  );
 
 type S3Image = {
-    key: string;
-    url: string
-}
+  key: string;
+  url: string;
+};
 
 export type UploadImageSuccessResponseData = {
-    results: S3Image[]
-}
+  results: S3Image[];
+};

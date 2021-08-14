@@ -1,18 +1,9 @@
 <script lang="ts">
-  import {
-    Row,
-    Column,
-    NumberInput,
-    Checkbox,
-    SelectableTile,
-  } from "carbon-components-svelte";
+  import { Row, Column, NumberInput, Checkbox } from "carbon-components-svelte";
   import ModifiedSelectableTile from "./ModifiedSelectableTile.svelte";
-  import type {
-    UnderlyingDiseases,
-    UnderlyingDisease,
-  } from "../types/underlyingDisease";
+  import type { UnderlyingDiseases } from "../types/underlyingDisease";
 
-  let hasUnderlyingDisease: boolean = false;
+  let hasUnderlyingDisease = false;
 
   const underlyingDiseases: UnderlyingDiseases = [
     {
@@ -31,9 +22,9 @@
 
   let selectedUnderlyingDiseases: string[] = [];
   $: {
-    console.log(selectedUnderlyingDiseases)
+    console.log(selectedUnderlyingDiseases);
     if (!hasUnderlyingDisease) {
-      selectedUnderlyingDiseases = []
+      selectedUnderlyingDiseases = [];
     }
   }
 </script>

@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { Router, Link, Route } from "svelte-routing";
+  import { Router, Route } from "svelte-routing";
   import Login from "./pages/Login.svelte";
   import PatientForm from "./pages/PatientForm.svelte";
-  export let url: string = "";
+  export let url = "";
 </script>
 
 <Router {url}>
