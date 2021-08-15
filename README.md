@@ -16,7 +16,7 @@ Navigate to [localhost:5000](http://localhost:5000). You should see your app run
 
 # Building and running in production mode
 
-To create an optimised version of the app:
+To create an optimized version of the app:
 
 ```bash
 npm run build
