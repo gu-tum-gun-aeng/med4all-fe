@@ -1,12 +1,20 @@
 <script lang="ts">
   import { TextInput, Button } from "carbon-components-svelte";
-  import { requestOtp } from "../api/patient";
+  import { requestOtp } from "../api/auth";
+  import { router } from "tinro";
+  import { setRequestId, setMobileNumber } from "../store/otp";
 
   let mobileNumber: string = "";
 
   const handleLoginClick = async () => {
-    const result = await requestOtp(mobileNumber);
-    console.log(result);
+    try {
+      const response = await requestOtp(mobileNumber);
+      setMobileNumber(mobileNumber);
+      setRequestId(response.data.results.requestId);
+      router.goto("/verifyotp");
+    } catch (error) {
+      console.log(error);
+    }
   };
 </script>
 
@@ -46,6 +54,6 @@
   }
 
   .login-button {
-    margin-top: 150px;
+    margin-top: 100px;
   }
 </style>

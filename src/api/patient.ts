@@ -8,13 +8,6 @@ export const uploadImage = async (formData) =>
     { headers: { "Content-Type": "multipart/form-data" } }
   );
 
-export const requestOtp = async (mobileNumber: string) =>
-  await axios.post(
-    `https://${Config.hostUrl}/${Config.version}/volunteers/otp/request`,
-    { telephone: mobileNumber },
-    { headers: { "Content-Type": "application/json" } }
-  );
-
 type S3Image = {
   key: string;
   url: string;

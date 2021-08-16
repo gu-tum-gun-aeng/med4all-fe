@@ -41,10 +41,8 @@
   </Row>
   <Row>
     <Column>
-      <Checkbox
-        labelText="มีโรคประจำตัวไหม"
-        bind:checked={hasUnderlyingDisease}
-      />
+      <h3>มีโรคประจำตัวไหม</h3>
+      <Checkbox labelText="มี" bind:checked={hasUnderlyingDisease} />
     </Column>
   </Row>
   {#if hasUnderlyingDisease === true}
@@ -73,6 +71,13 @@
   h2 {
     color: black;
     font-size: 20px;
+    font-family: "IBM Plex Sans Thai";
+    font-weight: 400;
+  }
+
+  h3 {
+    color: black;
+    font-size: 16px;
     font-family: "IBM Plex Sans Thai";
     font-weight: 400;
   }
