@@ -37,16 +37,17 @@
 </script>
 
 <div class="login-container">
-  <h1>ยืนยัน OTP</h1>
+  <h1>Verify OTP</h1>
   <div class="login-form">
     <TextInput
-      labelText="กรุณากรอก OTP"
+      labelText="OTP number"
+      helperText="กรุณากรอก OTP จาก sms ที่ส่งไป"
       placeholder="ตัวอย่าง 1234"
       bind:value={otp}
     />
   </div>
   <div class="login-button">
-    <Button on:click={handleLoginClick}>Login</Button>
+    <Button on:click={handleLoginClick}>คลิกเพื่อยืนยัน otp</Button>
   </div>
 </div>
 
