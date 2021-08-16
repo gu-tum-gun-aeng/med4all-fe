@@ -2,18 +2,22 @@
   import { TextInput, Button } from "carbon-components-svelte";
   import { requestOtp } from "../api/patient";
 
-  let mobileNumber: string = ""
+  let mobileNumber: string = "";
 
   const handleLoginClick = async () => {
-    const result = await requestOtp(mobileNumber)
-    console.log(result)
-  }
+    const result = await requestOtp(mobileNumber);
+    console.log(result);
+  };
 </script>
 
 <div class="login-container">
   <h1>เข้าสู่ระบบ</h1>
   <div class="login-form">
-    <TextInput labelText="เบอร์โทรศัพท์" placeholder="ตัวอย่าง 08xyyyzzzz" bind:value={mobileNumber}/>
+    <TextInput
+      labelText="เบอร์โทรศัพท์"
+      placeholder="ตัวอย่าง 08xyyyzzzz"
+      bind:value={mobileNumber}
+    />
   </div>
   <div class="login-button">
     <Button on:click={handleLoginClick}>Login</Button>

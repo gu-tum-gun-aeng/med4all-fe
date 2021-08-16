@@ -11,9 +11,9 @@ export const uploadImage = async (formData) =>
 export const requestOtp = async (mobileNumber: string) =>
   await axios.post(
     `https://${Config.hostUrl}/${Config.version}/volunteers/otp/request`,
-    { telephone: mobileNumber},
+    { telephone: mobileNumber },
     { headers: { "Content-Type": "application/json" } }
-  )
+  );
 
 type S3Image = {
   key: string;
