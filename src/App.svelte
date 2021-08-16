@@ -6,7 +6,7 @@
 
 <Route>
   <Route path="/"><Login /></Route>
-  <Route path="/login"><PatientForm /></Route>
+  <Route path="/form"><PatientForm /></Route>
 </Route>
 
 <style>
