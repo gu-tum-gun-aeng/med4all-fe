@@ -50,3 +50,6 @@ Override IBM Component style here
 .bx--text-input-wrapper--readonly input.bx--text-input {
 	background: var(--main-background-color);
 }
+.bx--text-input {
+	font-family: var(--main-font);
+}
