@@ -57,7 +57,7 @@
     "carbon-icons-svelte": "^10.36.0",
     "sass": "^1.37.0",
     "sirv-cli": "^1.0.0",
-    "svelte-routing": "^1.6.0",
-    "thai-address-database": "^0.0.16"
+    "thai-address-database": "^0.0.16",
+    "tinro": "^0.6.5"
   }
 }

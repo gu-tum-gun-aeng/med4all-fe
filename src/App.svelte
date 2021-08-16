@@ -1,14 +1,13 @@
 <script lang="ts">
-  import { Router, Route } from "svelte-routing";
+  import { Route } from "tinro";
   import Login from "./pages/Login.svelte";
   import PatientForm from "./pages/PatientForm.svelte";
-  export let url = "";
 </script>
 
-<Router {url}>
-  <Route path="/" component={PatientForm} />
-  <Route path="/doctors/login"><Login /></Route>
-</Router>
+<Route>
+  <Route path="/"><Login /></Route>
+  <Route path="/login"><PatientForm /></Route>
+</Route>
 
 <style>
   @font-face {

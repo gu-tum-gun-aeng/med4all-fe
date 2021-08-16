@@ -164,11 +164,6 @@
     margin-bottom: 40px;
   }
 
-  .form-medical-info {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
   h1 {
     color: black;
     font-size: 40px;
