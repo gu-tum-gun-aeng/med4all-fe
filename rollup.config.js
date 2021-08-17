@@ -6,12 +6,10 @@ import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import css from 'rollup-plugin-css-only';
+import injectProcessEnv from 'rollup-plugin-inject-process-env';
 import json from "@rollup/plugin-json";
-import replace from '@rollup/plugin-replace';
-
 
 const production = !process.env.ROLLUP_WATCH;
-const sentryDns = process.env.SENTRY_DSN;
 
 function serve() {
 	let server;
@@ -81,9 +79,10 @@ export default {
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
 		production && terser(),
-		replace({
-			'process.env.sentryDns': sentryDns
-		})
+		injectProcessEnv({
+			NODE_ENV: process.env.NODE_ENV,
+			SENTRY_DSN: process.env.SENTRY_DSN,
+		}),
 	],
 	watch: {
 		clearScreen: false
