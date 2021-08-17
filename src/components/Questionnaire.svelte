@@ -10,10 +10,10 @@
   import underlyingDiseases from "../formData/underlyingDiseases";
   import symptoms from "../formData/symptoms";
 
-  let hasUnderlyingDisease = false;
-
   let weight: number = 0;
   let height: number = 0;
+
+  let hasUnderlyingDisease = false;
 
   let selectedUnderlyingDiseases: string[] = [];
   $: {
@@ -120,6 +120,7 @@
     font-family: "IBM Plex Sans Thai";
     font-weight: 400;
     margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   p {

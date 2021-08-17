@@ -12,6 +12,7 @@
   import ImageUploader from "../components/ImageUploader.svelte";
   import Questionnaire from "../components/Questionnaire.svelte";
   import LocationForm from "../components/LocationForm.svelte";
+  import LabForm from "../components/LabForm.svelte";
 
   let patientPhone = "";
   let custodiaPhone = "";
@@ -94,6 +95,7 @@
         />
       </div>
       <LocationForm />
+      <LabForm />
       <Questionnaire />
       <Button type="submit">ส่งข้อมูล</Button>
     </Form>

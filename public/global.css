@@ -60,3 +60,6 @@ Override IBM Component style here
 .bx--list-box__label {
 	font-family: var(--main-font);
 }
+.bx--date-picker__input {
+	font-family: var(--main-font) !important;
+}
