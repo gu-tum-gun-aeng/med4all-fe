@@ -4,8 +4,8 @@
   import {
     getRequestIdSubscription,
     getMobileNumberSubscription,
-  } from "../store/otp";
-  import { setIsAuthenticated } from "../store/auth";
+  } from "../stores/otp";
+  import { setIsAuthenticated } from "../stores/auth";
   import { router } from "tinro";
 
   let otp: string = "";

@@ -2,7 +2,7 @@
   import { TextInput, Button } from "carbon-components-svelte";
   import { requestOtp } from "../api/auth";
   import { router } from "tinro";
-  import { setRequestId, setMobileNumber } from "../store/otp";
+  import { setRequestId, setMobileNumber } from "../stores/otp";
 
   let mobileNumber: string = "";
 

@@ -7,9 +7,11 @@ import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import css from 'rollup-plugin-css-only';
 import json from "@rollup/plugin-json";
+import replace from '@rollup/plugin-replace';
 
 
 const production = !process.env.ROLLUP_WATCH;
+const sentryDns = process.env.SENTRY_DSN;
 
 function serve() {
 	let server;
@@ -64,7 +66,7 @@ export default {
 		commonjs(),
 		typescript({
 			sourceMap: !production,
-			inlineSources: !production
+			inlineSources: !production,
 		}),
 		json({ compact: true }),
 
@@ -78,7 +80,10 @@ export default {
 
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
-		production && terser()
+		production && terser(),
+		replace({
+			'process.env.sentryDns': sentryDns
+		})
 	],
 	watch: {
 		clearScreen: false
