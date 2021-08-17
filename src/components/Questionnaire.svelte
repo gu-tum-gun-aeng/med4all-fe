@@ -1,24 +1,9 @@
 <script lang="ts">
   import { Row, Column, NumberInput, Checkbox } from "carbon-components-svelte";
   import ModifiedSelectableTile from "./ModifiedSelectableTile.svelte";
-  import type { UnderlyingDiseases } from "../types/underlyingDisease";
+  import underlyingDiseases from "../formData/underlyingDiseases"
 
   let hasUnderlyingDisease = false;
-
-  const underlyingDiseases: UnderlyingDiseases = [
-    {
-      text: "โรคไตวายเรื้อรังระยะสุดท้าย",
-      value: "lateChronicKidneyFailure",
-    },
-    {
-      text: "โรคมะเร็ง (ระหว่างรักษา)",
-      value: "onGoingCureCancer",
-    },
-    {
-      text: "เอชไอวี (HIV)",
-      value: "hiv",
-    },
-  ];
 
   let selectedUnderlyingDiseases: string[] = [];
   $: {
@@ -48,6 +33,7 @@
   {#if hasUnderlyingDisease === true}
     <Row>
       <Column>
+        <p>กรุณาคลิกเพื่อเพิ่มโรคประจำตัว</p>
         {#each underlyingDiseases as underlyingDisease}
           <ModifiedSelectableTile
             bind:group={selectedUnderlyingDiseases}
@@ -80,5 +66,13 @@
     font-size: 16px;
     font-family: "IBM Plex Sans Thai";
     font-weight: 400;
+    margin-top: 20px;
+  }
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "IBM Plex Sans Thai";
+    font-size: 14px;
   }
 </style>
