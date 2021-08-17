@@ -5,7 +5,7 @@ on:
       - main
 
 jobs:
-  format-lint-test-audit:
+  check-and-deploy:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
@@ -27,3 +27,8 @@ jobs:
 
       - name: Audit
         run: npm audit
+      
+      - name: Tricker build
+        env:
+          CLOUDFLARE_PAGE_TRIGGER_DEPLOYMENT: ${{ secrets.CLOUDFLARE_PAGE_TRIGGER_DEPLOYMENT }}
+        run: curl -X POST "%CLOUDFLARE_PAGE_TRIGGER_DEPLOYMENT%"
