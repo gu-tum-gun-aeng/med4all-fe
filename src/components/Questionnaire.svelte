@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Row, Column, NumberInput, Checkbox } from "carbon-components-svelte";
   import ModifiedSelectableTile from "./ModifiedSelectableTile.svelte";
-  import underlyingDiseases from "../formData/underlyingDiseases"
+  import underlyingDiseases from "../formData/underlyingDiseases";
 
   let hasUnderlyingDisease = false;
 

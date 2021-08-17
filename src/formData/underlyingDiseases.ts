@@ -3,7 +3,7 @@ import type { UnderlyingDiseases } from "../types/underlyingDisease";
 export default [
   {
     text: "โรคเบาหวานที่ควบคุมไม่ได้ (Uncontrol DM)",
-    value: "isDiseaseUncontrollDm"
+    value: "isDiseaseUncontrollDm",
   },
   {
     text: "โรคมะเร็งระหว่างการรักษา",
@@ -11,15 +11,15 @@ export default [
   },
   {
     text: "โรคปอดอุดตันเรื้อรัง (COPD)",
-    value: "isDiseaseCopd"
+    value: "isDiseaseCopd",
   },
   {
     text: "โรคหอบหืด (Asthma)",
-    value: "isDiseaseAsthma"
+    value: "isDiseaseAsthma",
   },
   {
     text: "โรคอ้วน (น้ำหนัก > 90 กิโลกรัม หรือ BMI > 30)",
-    value: "isDiseaseObesity"
+    value: "isDiseaseObesity",
   },
   {
     text: "โรคไตวายเรื้อรังระยะที่ 4 (CKD stage 4)",
@@ -27,11 +27,11 @@ export default [
   },
   {
     text: "โรคหลอดเลือดสมองภายใน 6 เดือนนี้",
-    value: "isDiseaseStrokeWithinSixMonth"
+    value: "isDiseaseStrokeWithinSixMonth",
   },
   {
     text: "โรคหัวใจหลอดเลือด",
-    value: "isDiseaseCardioVascularDisease"
+    value: "isDiseaseCardioVascularDisease",
   },
   {
     text: "โรคเอชไอวี (HIV)",
@@ -39,18 +39,18 @@ export default [
   },
   {
     text: "โรคความดันโลหิตสูง",
-    value: "isDiseaseHypertension"
+    value: "isDiseaseHypertension",
   },
   {
     text: "โรคไขมันในเลือดสูง",
-    value: "isDiseaseHyperlipidemia"
+    value: "isDiseaseHyperlipidemia",
   },
   {
     text: "โรคตับแข็ง",
-    value: "isDiseaseCirrhosis"
+    value: "isDiseaseCirrhosis",
   },
   {
     text: "วัณโรค",
-    value: "isDiseaseTuberculosis"
-  }
+    value: "isDiseaseTuberculosis",
+  },
 ] as UnderlyingDiseases;
