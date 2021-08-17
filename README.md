@@ -27,14 +27,15 @@ npm run build
 - [Carbon Components Svelte](https://carbon-svelte.vercel.app/)
 
 ### Routing
-- [Svelte Routing](https://github.com/EmilTholin/svelte-routing)
+- [Tinro](https://github.com/AlexxNB/tinro)
 
 ### Testing
+(not work now, due to problems with testing-library)
 we use `jest` and `testing-library` for unit and integration testing.
 - [jest](https://jestjs.io/)
 - [testing-library](https://testing-library.com/docs/svelte-testing-library/intro/)
 
-we use `cypress` to be our e2e.
+we plan to use `cypress` to be our e2e.
 - [cypress](https://www.cypress.io/)
 
 # Overriding Component styles
