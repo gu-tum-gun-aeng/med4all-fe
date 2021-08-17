@@ -7,7 +7,7 @@
     Select,
     SelectItem,
     Row,
-    Column
+    Column,
   } from "carbon-components-svelte";
   import { uploadImage } from "../api/patient";
   import type { UploadImageSuccessResponseData } from "../api/patient";

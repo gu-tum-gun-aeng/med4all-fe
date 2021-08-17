@@ -1,10 +1,19 @@
 <script lang="ts">
-  import { Row, Column, NumberInput, Checkbox, MultiSelect } from "carbon-components-svelte";
+  import {
+    Row,
+    Column,
+    NumberInput,
+    Checkbox,
+    MultiSelect,
+  } from "carbon-components-svelte";
   import ModifiedSelectableTile from "./ModifiedSelectableTile.svelte";
   import underlyingDiseases from "../formData/underlyingDiseases";
-  import symptoms from "../formData/symptoms"
+  import symptoms from "../formData/symptoms";
 
   let hasUnderlyingDisease = false;
+
+  let weight: number = 0;
+  let height: number = 0;
 
   let selectedUnderlyingDiseases: string[] = [];
   $: {
@@ -14,11 +23,14 @@
   }
 
   let selectedSymptoms: any[] = [];
-  let selectedSymptomsDisplay = ""
+  let selectedSymptomsDisplay = "";
 
   $: {
     selectedSymptomsDisplay = selectedSymptoms
-      .map(selectedSymptom => symptoms.find(symptom => symptom.value === selectedSymptom)["text"])
+      .map(
+        (selectedSymptom) =>
+          symptoms.find((symptom) => symptom.value === selectedSymptom)["text"]
+      )
       .join(", ");
   }
 </script>
@@ -27,10 +39,20 @@
   <h2>ข้อมูลการประเมิน</h2>
   <Row>
     <Column>
-      <NumberInput max={1000} min={0} label="น้ำหนัก (หน่วยกิโลกรัม, kg)" />
+      <NumberInput
+        max={1000}
+        min={0}
+        label="น้ำหนัก (หน่วยกิโลกรัม, kg)"
+        bind:value={weight}
+      />
     </Column>
     <Column>
-      <NumberInput max={1000} min={0} label="ส่วนสูง (หน่วยเซนติเมตร, cm)" />
+      <NumberInput
+        max={1000}
+        min={0}
+        label="ส่วนสูง (หน่วยเซนติเมตร, cm)"
+        bind:value={height}
+      />
     </Column>
   </Row>
   <Row>
@@ -62,16 +84,18 @@
   </Row>
   <Row>
     <Column>
-      <p></p>
+      <p />
       <MultiSelect
         titleText=""
         label="กรุณาคลิกเพื่อเลือกอาการที่พบ"
-        items={symptoms.map(symptom => ({ ...symptom, id: symptom.value }))}
+        items={symptoms.map((symptom) => ({ ...symptom, id: symptom.value }))}
         value={"test"}
         bind:selectedIds={selectedSymptoms}
       />
       {#if selectedSymptoms.length > 0}
-        <p>อาการที่คลิกเลือก {selectedSymptoms.length} อาการ: {selectedSymptomsDisplay}</p>
+        <p>
+          อาการที่คลิกเลือก {selectedSymptoms.length} อาการ: {selectedSymptomsDisplay}
+        </p>
       {/if}
     </Column>
   </Row>
