@@ -5,6 +5,7 @@
   export let labelDescription = "";
   export let buttonLabel = "";
   export let accept = "";
+  export let uploadCallback;
 
   let fileUploadingStatus: "complete" | "edit" | "uploading" = "complete";
   let fileUploadRef: HTMLInputElement = null;
@@ -14,10 +15,12 @@
   let files: File[];
   $: files = [];
 
-  const handleUpload = () => {
+  const handleUpload = async () => {
     fileUploadingStatus = "uploading";
     files = Array.from(fileUploadRef.files);
     const [image] = files;
+    await uploadCallback(image);
+
     const reader = new FileReader();
     reader.readAsDataURL(image);
     reader.onload = (e) => {

@@ -21,6 +21,7 @@ Override IBM Component style here
 }
 .bx--label {
 	font-family: var(--main-font);
+	font-size: 15px !important;
 }
 .bx--file--label {
 	font-family: var(--main-font);
