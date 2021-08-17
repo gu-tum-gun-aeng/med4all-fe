@@ -2,14 +2,24 @@
   import { Row, Column, NumberInput, Checkbox } from "carbon-components-svelte";
   import ModifiedSelectableTile from "./ModifiedSelectableTile.svelte";
   import underlyingDiseases from "../formData/underlyingDiseases";
+  import symptoms from "../formData/symptoms"
 
   let hasUnderlyingDisease = false;
 
   let selectedUnderlyingDiseases: string[] = [];
   $: {
-    console.log(selectedUnderlyingDiseases);
     if (!hasUnderlyingDisease) {
       selectedUnderlyingDiseases = [];
+    }
+  }
+
+  let hasSymptom = false;
+
+  let selectedSymptoms: string[] = [];
+  $: {
+    console.log(selectedSymptoms);
+    if (!hasSymptom) {
+      selectedSymptoms = [];
     }
   }
 </script>
@@ -41,6 +51,28 @@
             value={underlyingDisease.value}
           >
             {underlyingDisease.text}
+          </ModifiedSelectableTile>
+        {/each}
+      </Column>
+    </Row>
+  {/if}
+  <Row>
+    <Column>
+      <h3>มีอาการแสดงออกหรือไม่</h3>
+      <Checkbox labelText="มี" bind:checked={hasSymptom} />
+    </Column>
+  </Row>
+  {#if hasSymptom === true}
+    <Row>
+      <Column>
+        <p>กรุณาคลิกเพื่อเลือกอาการที่พบ</p>
+        {#each symptoms as symptom}
+          <ModifiedSelectableTile
+            bind:group={selectedSymptoms}
+            name="underlyingDiseases"
+            value={symptom.value}
+          >
+            {symptom.text}
           </ModifiedSelectableTile>
         {/each}
       </Column>
