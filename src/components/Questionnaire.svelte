@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Row, Column, NumberInput, Checkbox } from "carbon-components-svelte";
+  import { Row, Column, NumberInput, Checkbox, MultiSelect } from "carbon-components-svelte";
   import ModifiedSelectableTile from "./ModifiedSelectableTile.svelte";
   import underlyingDiseases from "../formData/underlyingDiseases";
   import symptoms from "../formData/symptoms"
@@ -13,14 +13,13 @@
     }
   }
 
-  let hasSymptom = false;
+  let selectedSymptoms: any[] = [];
+  let selectedSymptomsDisplay = ""
 
-  let selectedSymptoms: string[] = [];
   $: {
-    console.log(selectedSymptoms);
-    if (!hasSymptom) {
-      selectedSymptoms = [];
-    }
+    selectedSymptomsDisplay = selectedSymptoms
+      .map(selectedSymptom => symptoms.find(symptom => symptom.value === selectedSymptom)["text"])
+      .join(", ");
   }
 </script>
 
@@ -58,26 +57,24 @@
   {/if}
   <Row>
     <Column>
-      <h3>มีอาการแสดงออกหรือไม่</h3>
-      <Checkbox labelText="มี" bind:checked={hasSymptom} />
+      <h3>อาการที่แสดงออก</h3>
     </Column>
   </Row>
-  {#if hasSymptom === true}
-    <Row>
-      <Column>
-        <p>กรุณาคลิกเพื่อเลือกอาการที่พบ</p>
-        {#each symptoms as symptom}
-          <ModifiedSelectableTile
-            bind:group={selectedSymptoms}
-            name="underlyingDiseases"
-            value={symptom.value}
-          >
-            {symptom.text}
-          </ModifiedSelectableTile>
-        {/each}
-      </Column>
-    </Row>
-  {/if}
+  <Row>
+    <Column>
+      <p></p>
+      <MultiSelect
+        titleText=""
+        label="กรุณาคลิกเพื่อเลือกอาการที่พบ"
+        items={symptoms.map(symptom => ({ ...symptom, id: symptom.value }))}
+        value={"test"}
+        bind:selectedIds={selectedSymptoms}
+      />
+      {#if selectedSymptoms.length > 0}
+        <p>อาการที่คลิกเลือก {selectedSymptoms.length} อาการ: {selectedSymptomsDisplay}</p>
+      {/if}
+    </Column>
+  </Row>
 </div>
 
 <style scoped>

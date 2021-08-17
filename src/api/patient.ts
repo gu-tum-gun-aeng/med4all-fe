@@ -8,6 +8,19 @@ export const uploadImage = async (formData) =>
     { headers: { "Content-Type": "multipart/form-data" } }
   );
 
+
+export const submitForm = async (formData, token) => 
+  await axios.post(
+    `https://${Config.hostUrl}/${Config.version}/patients`,
+    formData,
+    {
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${token}`
+      }
+    }
+  )
+
 type S3Image = {
   key: string;
   url: string;

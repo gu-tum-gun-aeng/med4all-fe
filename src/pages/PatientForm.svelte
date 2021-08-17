@@ -6,6 +6,8 @@
     Button,
     Select,
     SelectItem,
+    Row,
+    Column
   } from "carbon-components-svelte";
   import { uploadImage } from "../api/patient";
   import type { UploadImageSuccessResponseData } from "../api/patient";
@@ -97,8 +99,14 @@
     <Form on:submit={handleOnSubmit}>
       <div class="form-basic-info">
         <TextInput labelText="เลขบัตรประชาชน" placeholder="" />
-        <TextInput labelText="ชื่อจริง" placeholder="" />
-        <TextInput labelText="นามสกุล" placeholder="" />
+        <Row>
+          <Column>
+            <TextInput labelText="ชื่อจริง" placeholder="" />
+          </Column>
+          <Column>
+            <TextInput labelText="นามสกุล" placeholder="" />
+          </Column>
+        </Row>
         <NumberInput max={150} min={15} value={15} label="อายุ" />
       </div>
       <div class="form-address">

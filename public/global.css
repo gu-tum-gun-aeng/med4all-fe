@@ -56,3 +56,6 @@ Override IBM Component style here
 .bx--form__helper-text {
 	font-family: var(--main-font);
 }
+.bx--list-box__label {
+	font-family: var(--main-font);
+}
