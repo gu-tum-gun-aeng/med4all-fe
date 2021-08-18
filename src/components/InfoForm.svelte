@@ -22,6 +22,23 @@
   let lineId: string = "";
   let homeTown: string = "";
   let remark: string = "";
+
+  export let infoForm = {};
+  $: {
+    infoForm = {
+      certificateId,
+      name,
+      surname,
+      patientPhone,
+      custodiaPhone,
+      checkInDate,
+      checkOutDate,
+      sexId,
+      lineId,
+      homeTown,
+      remark,
+    };
+  }
 </script>
 
 <div class="form-basic-info">
@@ -82,18 +99,16 @@
       <TextInput labelText="ภูมิลำเนา" placeholder="" bind:value={homeTown} />
     </Column>
   </Row>
-  <DatePicker datePickerType="single" on:change>
+  <DatePicker datePickerType="single" on:change bind:value={checkInDate}>
     <DatePickerInput
       labelText="วันที่เข้าสู่ระบบ (ระบบที่นิยามไว้) "
       placeholder="mm/dd/yyyy"
-      bind:value={checkInDate}
     />
   </DatePicker>
-  <DatePicker datePickerType="single" on:change>
+  <DatePicker datePickerType="single" on:change bind:value={checkOutDate}>
     <DatePickerInput
       labelText="วันที่ออกจากระบบ (ระบบที่นิยามไว้) "
       placeholder="mm/dd/yyyy"
-      bind:value={checkOutDate}
     />
   </DatePicker>
   <Row>

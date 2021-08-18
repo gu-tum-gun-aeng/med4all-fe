@@ -3,7 +3,7 @@
   import { requestOtp } from "../api/auth";
   import { router } from "tinro";
   import { setRequestId, setMobileNumber } from "../stores/otp";
-  import Errors from "../errors";
+  import Errors from "../errors/responseErrors.json";
 
   let mobileNumber: string = "";
   let errorDisplay: string = "";
@@ -17,10 +17,7 @@
       router.goto("/verifyotp");
     } catch (err) {
       if (err.response.data.status === 500) {
-        const errorResponse = Errors.find(
-          (error) => error.name === err.response.data.name
-        );
-        errorDisplay = errorResponse.displayText;
+        errorDisplay = Errors[err.response.data.name];
       }
     }
   };
@@ -71,10 +68,5 @@
 
   .login-button {
     margin-top: 100px;
-  }
-
-  .noti-container {
-    position: absolute;
-    bottom: 100px;
   }
 </style>

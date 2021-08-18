@@ -8,6 +8,8 @@
     RadioButton,
   } from "carbon-components-svelte";
 
+  export let vaccineHistoryForm;
+
   let vaccinationRecords: string = "noVaccinated";
   let firstVaccinedDate: string;
   let secondVaccinedDate: string;
@@ -19,6 +21,14 @@
     } else if (vaccinationRecords === "oneVaccinated") {
       secondVaccinedDate = "";
     }
+  }
+
+  $: {
+    vaccineHistoryForm = {
+      vaccinationRecords,
+      firstVaccinedDate,
+      secondVaccinedDate,
+    };
   }
 </script>
 

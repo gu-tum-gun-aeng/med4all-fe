@@ -3,7 +3,10 @@
   import { searchAddressByZipcode } from "thai-address-database";
   import type { Addresses, AddressItem } from "../types/address";
 
-  let zipcode = "";
+  export let locationForm;
+
+  let location: string = "";
+  let zipcode: string = "";
   let addressItems: Addresses = [];
   $: {
     if (zipcode.length === 5) {
@@ -28,11 +31,20 @@
       province = "";
     }
   }
+
+  $: {
+    locationForm = {
+      zipcode,
+      district,
+      amphoe,
+      province,
+    };
+  }
 </script>
 
 <div class="form-address">
   <h2>ที่อยู่อาศัย</h2>
-  <TextInput labelText="ที่อยู่" placeholder="" />
+  <TextInput labelText="ที่อยู่" placeholder="" bind:value={location} />
   <TextInput labelText="รหัสไปรษณีย์" placeholder="" bind:value={zipcode} />
   <Select
     labelText="ตำบล"

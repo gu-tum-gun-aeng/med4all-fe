@@ -7,11 +7,23 @@
     DatePickerInput,
   } from "carbon-components-svelte";
 
+  export let labForm;
+
   let isAtkPositive: boolean = false;
   let isRtPcrPositive: boolean = false;
   let labTestWhen: string = "";
   let isFavipiravirReceived: boolean = false;
   let receivedFavipiravirWhen: string = "";
+
+  $: {
+    labForm = {
+      isAtkPositive,
+      isRtPcrPositive,
+      labTestWhen,
+      isFavipiravirReceived,
+      receivedFavipiravirWhen,
+    };
+  }
 </script>
 
 <div class="form-lab">

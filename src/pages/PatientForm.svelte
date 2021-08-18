@@ -9,22 +9,23 @@
   import Questionnaire from "../components/Questionnaire.svelte";
   import VaccineHistoryForm from "../components/VaccineHistoryForm.svelte";
 
+  let infoForm;
+  let locationForm;
+  let labForm;
+  let vaccineHistoryForm;
+  let questionnaire;
+
   let imageUrl = {
     uploadedNationalIdCard: "",
     uploadedAntigenTesting: "",
   } as const;
 
-  let nationalIdCardUploadStatus: "complete" | "edit" | "uploading" =
-    "complete";
-
-  const handleOnSubmit = () => {
-    console.log(imageUrl);
-  };
+  let uploadStatus: "complete" | "edit" | "uploading" = "complete";
 
   const handleFileUpload = async (file: File, uploadedUrl: string) => {
-    nationalIdCardUploadStatus = "uploading";
+    uploadStatus = "uploading";
     if (!file) {
-      nationalIdCardUploadStatus = "complete";
+      uploadStatus = "complete";
       return;
     }
     const formData = new FormData();
@@ -33,12 +34,24 @@
     const data: UploadImageSuccessResponseData = response.data;
     const [{ url }] = data.results;
     imageUrl[uploadedUrl] = url;
-    nationalIdCardUploadStatus = "complete";
+    uploadStatus = "complete";
+  };
+
+  $: form = {
+    ...infoForm,
+    ...locationForm,
+    ...labForm,
+    ...vaccineHistoryForm,
+    ...questionnaire,
+  };
+
+  const handleOnSubmit = () => {
+    console.log(form);
   };
 </script>
 
 <main>
-  <h1>กรอกฟอร์มหน่อยจ้าแฮะๆ</h1>
+  <h1>กรอกฟอร์มหน่อยจ้าแฮะๆ 🥺</h1>
   <div class="patient-form">
     <div class="file-uploader">
       <ImageUploader
@@ -61,11 +74,11 @@
       />
     </div>
     <Form on:submit={handleOnSubmit}>
-      <InfoForm />
-      <LocationForm />
-      <LabForm />
-      <VaccineHistoryForm />
-      <Questionnaire />
+      <InfoForm bind:infoForm />
+      <LocationForm bind:locationForm />
+      <LabForm bind:labForm />
+      <VaccineHistoryForm {vaccineHistoryForm} />
+      <Questionnaire {questionnaire} />
       <div class="submit-button-container">
         <Button type="submit">ส่งข้อมูล</Button>
       </div>

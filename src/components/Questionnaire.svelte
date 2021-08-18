@@ -15,9 +15,10 @@
   import underlyingDiseases from "../formData/underlyingDiseases";
   import symptomsList from "../formData/symptoms";
 
+  export let questionnaire;
+
   let weight: number = 0;
   let height: number = 0;
-
   let bodyTemperatureCelcius: number;
   let pulseRateBpm: number;
   let oxygenSaturation: number;
@@ -61,6 +62,28 @@
           ]
       )
       .join(", ");
+  }
+
+  $: {
+    questionnaire = {
+      weight,
+      height,
+      bodyTemperatureCelcius,
+      pulseRateBpm,
+      oxygenSaturation,
+      oxygenSaturationAfterExercise,
+      oxygenSaturationDifference,
+      systolic,
+      diastolic,
+      inspirationRate,
+      isPregnant,
+      pregnancyWeeks,
+      isBedridden,
+      symptoms,
+      firstDateOfSymtom,
+      allergyToDrugs,
+      allergyToFoods,
+    };
   }
 </script>
 
