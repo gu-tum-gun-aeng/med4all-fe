@@ -8,6 +8,7 @@
     TextArea,
     DatePickerInput,
     DatePicker,
+    Toggle,
   } from "carbon-components-svelte";
   import ModifiedSelectableTile from "./ModifiedSelectableTile.svelte";
   import InputTags from "./InputTags.svelte";
@@ -42,6 +43,12 @@
     }
   }
 
+  $: {
+    if (!isPregnant) {
+      pregnancyWeeks = null;
+    }
+  }
+
   let selectedSymptoms: any[] = [];
   let selectedSymptomsDisplay = "";
 
@@ -68,6 +75,8 @@
         bind:value={weight}
       />
     </Column>
+  </Row>
+  <Row>
     <Column>
       <NumberInput
         max={1000}
@@ -86,6 +95,8 @@
         min={0}
       />
     </Column>
+  </Row>
+  <Row>
     <Column>
       <NumberInput
         bind:value={pulseRateBpm}
@@ -134,6 +145,8 @@
         min={0}
       />
     </Column>
+  </Row>
+  <Row>
     <Column>
       <NumberInput
         bind:value={diastolic}
@@ -155,7 +168,19 @@
   </Row>
   <Row>
     <Column>
-      <Checkbox labelText="มีการตั้งครรภ์" bind:checked={isPregnant} />
+      <div class="checkbox-container">
+        <Checkbox labelText="เป็นผู้ป่วยติดเตียง" bind:checked={isBedridden} />
+      </div>
+    </Column>
+  </Row>
+  <Row>
+    <Column>
+      <Toggle
+        labelText="มีการตั้งครรภ์"
+        bind:toggled={isPregnant}
+        labelA="ไม่มี"
+        labelB="มี"
+      />
     </Column>
   </Row>
   {#if isPregnant}
@@ -170,11 +195,6 @@
       </Column>
     </Row>
   {/if}
-  <Row>
-    <Column>
-      <Checkbox labelText="ผู้ป่วยติดเตียง" bind:checked={isBedridden} />
-    </Column>
-  </Row>
   <Row>
     <Column>
       <TextArea labelText="อาการทั่วไปล่าสุด" bind:value={symptoms} />
@@ -200,7 +220,12 @@
   </Row>
   <Row>
     <Column>
-      <Checkbox labelText="มีโรคประจำตัว" bind:checked={hasUnderlyingDisease} />
+      <Toggle
+        labelText="มีโรคประจำตัว"
+        bind:toggled={hasUnderlyingDisease}
+        labelA="ไม่มี"
+        labelB="มี"
+      />
     </Column>
   </Row>
   {#if hasUnderlyingDisease === true}
@@ -259,7 +284,12 @@
 
 <style scoped>
   .form-questionnaire {
-    margin-top: 50px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+
+  .checkbox-container {
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 
@@ -271,12 +301,11 @@
   }
 
   h3 {
-    color: black;
-    font-size: 16px;
+    color: #525252;
+    font-size: 15px;
     font-family: "IBM Plex Sans Thai";
     font-weight: 400;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 30px;
   }
 
   p {

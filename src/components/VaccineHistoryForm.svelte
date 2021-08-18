@@ -26,7 +26,10 @@
   <h2>ประวัติการฉีดวัคซีน</h2>
   <Row>
     <Column>
-      <RadioButtonGroup bind:selected={vaccinationRecords}>
+      <RadioButtonGroup
+        bind:selected={vaccinationRecords}
+        orientation="vertical"
+      >
         <RadioButton labelText="ยังไม่ได้ฉีดวัคซีน" value="noVaccinated" />
         <RadioButton labelText="ฉีดไปแล้ว 1 เข็ม" value="oneVaccinated" />
         <RadioButton labelText="ฉีดไปแล้ว 2 เข็ม" value="twoVaccinated" />
@@ -63,7 +66,7 @@
 
 <style scoped>
   .form-vaccine-history {
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 20px;
   }
 
@@ -72,6 +75,5 @@
     font-size: 20px;
     font-family: "IBM Plex Sans Thai";
     font-weight: 400;
-    margin-bottom: 20px;
   }
 </style>

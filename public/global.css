@@ -63,3 +63,7 @@ Override IBM Component style here
 .bx--date-picker__input {
 	font-family: var(--main-font) !important;
 }
+.bx--toggle-input__label {
+	font-family: var(--main-font);
+	font-size: 15px !important;
+}

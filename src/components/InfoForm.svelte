@@ -1,6 +1,7 @@
 <script lang="ts">
   import {
     TextInput,
+    TextArea,
     NumberInput,
     Row,
     Column,
@@ -35,10 +36,20 @@
   </Row>
   <Row>
     <Column>
-      <TextInput labelText="ชื่อจริง" placeholder="" bind:value={name} />
+      <TextInput
+        labelText="ชื่อจริง (first name)"
+        placeholder=""
+        bind:value={name}
+      />
     </Column>
+  </Row>
+  <Row>
     <Column>
-      <TextInput labelText="นามสกุล" placeholder="" bind:value={surname} />
+      <TextInput
+        labelText="นามสกุล (last name)"
+        placeholder=""
+        bind:value={surname}
+      />
     </Column>
   </Row>
   <Row>
@@ -63,7 +74,7 @@
   />
   <Row>
     <Column>
-      <TextInput labelText="LINE ID" placeholder="" bind:value={lineId} />
+      <TextInput labelText="Line ID" placeholder="" bind:value={lineId} />
     </Column>
   </Row>
   <Row>
@@ -87,7 +98,7 @@
   </DatePicker>
   <Row>
     <Column>
-      <TextInput labelText="หมายเหตุ" placeholder="" bind:value={remark} />
+      <TextArea labelText="หมายเหตุ" placeholder="" bind:value={remark} />
     </Column>
   </Row>
 </div>
