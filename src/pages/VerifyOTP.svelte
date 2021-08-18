@@ -1,11 +1,12 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   import { TextInput, Button } from "carbon-components-svelte";
   import { verifyOtp } from "../api/auth";
   import {
     getRequestIdSubscription,
     getMobileNumberSubscription,
   } from "../stores/otp";
-  import { setIsAuthenticated } from "../stores/auth";
+  import { setIsAuthenticated, setToken } from "../stores/auth";
   import { router } from "tinro";
 
   let otp: string = "";
@@ -26,14 +27,19 @@
       const numberOtp = Number.parseInt(otp);
       const result = await verifyOtp(numberOtp, requestId, mobileNumber);
 
-      console.log(result);
-
       setIsAuthenticated(true);
+      setToken(result.data.token);
       router.goto("/form");
     } catch (error) {
       console.log(error);
     }
   };
+
+  onMount(() => {
+    if (!requestId && !mobileNumber) {
+      router.goto("/");
+    }
+  });
 </script>
 
 <div class="login-container">
