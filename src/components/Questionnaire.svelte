@@ -6,6 +6,8 @@
     Checkbox,
     MultiSelect,
     TextArea,
+    DatePickerInput,
+    DatePicker,
   } from "carbon-components-svelte";
   import ModifiedSelectableTile from "./ModifiedSelectableTile.svelte";
   import InputTags from "./InputTags.svelte";
@@ -27,6 +29,7 @@
   let pregnancyWeeks: number | null = null;
   let isBedridden: boolean = false;
   let symptoms: string = "";
+  let firstDateOfSymtom: string;
   let allergyToDrugs: string[] = [];
   let allergyToFoods: string[] = [];
 
@@ -241,11 +244,22 @@
       {/if}
     </Column>
   </Row>
+  <Row>
+    <Column>
+      <DatePicker datePickerType="single" on:change>
+        <DatePickerInput
+          labelText="วันที่เริ่มมีอาการ"
+          placeholder="mm/dd/yyyy"
+          bind:value={firstDateOfSymtom}
+        />
+      </DatePicker>
+    </Column>
+  </Row>
 </div>
 
 <style scoped>
   .form-questionnaire {
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
   }
 

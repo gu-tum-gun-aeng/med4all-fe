@@ -1,0 +1,2260 @@
+{
+  "cdPersonNationalityCode": {
+    "กรีซ": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "1",
+      "item_name": "กรีซ",
+      "display_thai": "กรีซ",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กัมพูชา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "2",
+      "item_name": "กัมพูชา",
+      "display_thai": "กัมพูชา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กัวเตมาลา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "3",
+      "item_name": "กัวเตมาลา",
+      "display_thai": "กัวเตมาลา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กาตาร์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "4",
+      "item_name": "กาตาร์",
+      "display_thai": "กาตาร์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กานา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "5",
+      "item_name": "กานา",
+      "display_thai": "กานา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กาบอง": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "6",
+      "item_name": "กาบอง",
+      "display_thai": "กาบอง",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กาบูเวร์ดี": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "7",
+      "item_name": "กาบูเวร์ดี",
+      "display_thai": "กาบูเวร์ดี",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กายอานา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "8",
+      "item_name": "กายอานา",
+      "display_thai": "กายอานา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กินี": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "9",
+      "item_name": "กินี",
+      "display_thai": "กินี",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กินี-บิสเซา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "10",
+      "item_name": "กินี-บิสเซา",
+      "display_thai": "กินี-บิสเซา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เกรเนดา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "11",
+      "item_name": "เกรเนดา",
+      "display_thai": "เกรเนดา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เกาหลีใต้": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "12",
+      "item_name": "เกาหลีใต้",
+      "display_thai": "เกาหลีใต้",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เกาหลีเหนือ": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "13",
+      "item_name": "เกาหลีเหนือ",
+      "display_thai": "เกาหลีเหนือ",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "แกมเบีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "14",
+      "item_name": "แกมเบีย",
+      "display_thai": "แกมเบีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "โกตดิวัวร์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "15",
+      "item_name": "โกตดิวัวร์",
+      "display_thai": "โกตดิวัวร์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "คอซอวอ": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "16",
+      "item_name": "คอซอวอ",
+      "display_thai": "คอซอวอ",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "คอโมโรส": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "17",
+      "item_name": "คอโมโรส",
+      "display_thai": "คอโมโรส",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "คอสตาริกา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "18",
+      "item_name": "คอสตาริกา",
+      "display_thai": "คอสตาริกา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "คาซัคสถาน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "19",
+      "item_name": "คาซัคสถาน",
+      "display_thai": "คาซัคสถาน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "คิริบาส": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "20",
+      "item_name": "คิริบาส",
+      "display_thai": "คิริบาส",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "คิวบา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "21",
+      "item_name": "คิวบา",
+      "display_thai": "คิวบา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "คีร์กีซสถาน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "22",
+      "item_name": "คีร์กีซสถาน",
+      "display_thai": "คีร์กีซสถาน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "คูเวต": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "23",
+      "item_name": "คูเวต",
+      "display_thai": "คูเวต",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เคนยา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "24",
+      "item_name": "เคนยา",
+      "display_thai": "เคนยา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "แคนาดา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "25",
+      "item_name": "แคนาดา",
+      "display_thai": "แคนาดา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "แคเมอรูน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "26",
+      "item_name": "แคเมอรูน",
+      "display_thai": "แคเมอรูน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "โครเอเชีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "27",
+      "item_name": "โครเอเชีย",
+      "display_thai": "โครเอเชีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "โคลอมเบีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "28",
+      "item_name": "โคลอมเบีย",
+      "display_thai": "โคลอมเบีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "จอร์เจีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "29",
+      "item_name": "จอร์เจีย",
+      "display_thai": "จอร์เจีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "จอร์แดน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "30",
+      "item_name": "จอร์แดน",
+      "display_thai": "จอร์แดน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "จาเมกา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "31",
+      "item_name": "จาเมกา",
+      "display_thai": "จาเมกา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "จิบูตี": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "32",
+      "item_name": "จิบูตี",
+      "display_thai": "จิบูตี",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "จีน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "33",
+      "item_name": "จีน",
+      "display_thai": "จีน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ชาด": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "34",
+      "item_name": "ชาด",
+      "display_thai": "ชาด",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ชิลี": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "35",
+      "item_name": "ชิลี",
+      "display_thai": "ชิลี",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เช็กเกีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "36",
+      "item_name": "เช็กเกีย",
+      "display_thai": "เช็กเกีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ซานมารีโน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "37",
+      "item_name": "ซานมารีโน",
+      "display_thai": "ซานมารีโน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ซามัว": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "38",
+      "item_name": "ซามัว",
+      "display_thai": "ซามัว",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ซาอุดีอาระเบีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "39",
+      "item_name": "ซาอุดีอาระเบีย",
+      "display_thai": "ซาอุดีอาระเบีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ซิมบับเว": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "40",
+      "item_name": "ซิมบับเว",
+      "display_thai": "ซิมบับเว",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ซีเรีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "41",
+      "item_name": "ซีเรีย",
+      "display_thai": "ซีเรีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ซูดาน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "42",
+      "item_name": "ซูดาน",
+      "display_thai": "ซูดาน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ซูรินาม": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "43",
+      "item_name": "ซูรินาม",
+      "display_thai": "ซูรินาม",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เซเชลส์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "44",
+      "item_name": "เซเชลส์",
+      "display_thai": "เซเชลส์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เซนต์คิตส์และเนวิส": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "45",
+      "item_name": "เซนต์คิตส์และเนวิส",
+      "display_thai": "เซนต์คิตส์และเนวิส",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เซนต์ลูเชีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "46",
+      "item_name": "เซนต์ลูเชีย",
+      "display_thai": "เซนต์ลูเชีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เซนต์วินเซนต์และเกรนาดีนส์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "47",
+      "item_name": "เซนต์วินเซนต์และเกรนาดีนส์",
+      "display_thai": "เซนต์วินเซนต์และเกรนาดีนส์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เซเนกัล": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "48",
+      "item_name": "เซเนกัล",
+      "display_thai": "เซเนกัล",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เซอร์เบีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "49",
+      "item_name": "เซอร์เบีย",
+      "display_thai": "เซอร์เบีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เซาตูเมและปรินซีปี": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "50",
+      "item_name": "เซาตูเมและปรินซีปี",
+      "display_thai": "เซาตูเมและปรินซีปี",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เซาท์ซูดาน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "51",
+      "item_name": "เซาท์ซูดาน",
+      "display_thai": "เซาท์ซูดาน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เซียร์ราลีโอน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "52",
+      "item_name": "เซียร์ราลีโอน",
+      "display_thai": "เซียร์ราลีโอน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "แซมเบีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "53",
+      "item_name": "แซมเบีย",
+      "display_thai": "แซมเบีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "โซมาเลีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "54",
+      "item_name": "โซมาเลีย",
+      "display_thai": "โซมาเลีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ไซปรัส": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "55",
+      "item_name": "ไซปรัส",
+      "display_thai": "ไซปรัส",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ญี่ปุ่น": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "56",
+      "item_name": "ญี่ปุ่น",
+      "display_thai": "ญี่ปุ่น",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ดอมินีกา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "57",
+      "item_name": "ดอมินีกา",
+      "display_thai": "ดอมินีกา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เดนมาร์ก": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "58",
+      "item_name": "เดนมาร์ก",
+      "display_thai": "เดนมาร์ก",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ตรินิแดดและโตเบโก": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "59",
+      "item_name": "ตรินิแดดและโตเบโก",
+      "display_thai": "ตรินิแดดและโตเบโก",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ตองงา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "60",
+      "item_name": "ตองงา",
+      "display_thai": "ตองงา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ติมอร์-เลสเต": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "61",
+      "item_name": "ติมอร์-เลสเต",
+      "display_thai": "ติมอร์-เลสเต",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ตุรกี": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "62",
+      "item_name": "ตุรกี",
+      "display_thai": "ตุรกี",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ตูนิเซีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "63",
+      "item_name": "ตูนิเซีย",
+      "display_thai": "ตูนิเซีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ตูวาลู": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "64",
+      "item_name": "ตูวาลู",
+      "display_thai": "ตูวาลู",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เติร์กเมนิสถาน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "65",
+      "item_name": "เติร์กเมนิสถาน",
+      "display_thai": "เติร์กเมนิสถาน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "โตโก": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "66",
+      "item_name": "โตโก",
+      "display_thai": "โตโก",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ไต้หวัน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "67",
+      "item_name": "ไต้หวัน",
+      "display_thai": "ไต้หวัน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ทาจิกิสถาน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "68",
+      "item_name": "ทาจิกิสถาน",
+      "display_thai": "ทาจิกิสถาน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "แทนซาเนีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "69",
+      "item_name": "แทนซาเนีย",
+      "display_thai": "แทนซาเนีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ไทย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "70",
+      "item_name": "ไทย",
+      "display_thai": "ไทย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ทิเบต": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "71",
+      "item_name": "ทิเบต",
+      "display_thai": "ทิเบต",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "วาติกัน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "72",
+      "item_name": "วาติกัน",
+      "display_thai": "วาติกัน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "นอร์ทมาซิโดเนีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "73",
+      "item_name": "นอร์ทมาซิโดเนีย",
+      "display_thai": "นอร์ทมาซิโดเนีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "นอร์เวย์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "74",
+      "item_name": "นอร์เวย์",
+      "display_thai": "นอร์เวย์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "นามิเบีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "75",
+      "item_name": "นามิเบีย",
+      "display_thai": "นามิเบีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "นาอูรู": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "76",
+      "item_name": "นาอูรู",
+      "display_thai": "นาอูรู",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "นิการากัว": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "77",
+      "item_name": "นิการากัว",
+      "display_thai": "นิการากัว",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "นิวซีแลนด์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "78",
+      "item_name": "นิวซีแลนด์",
+      "display_thai": "นิวซีแลนด์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เนเธอร์แลนด์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "79",
+      "item_name": "เนเธอร์แลนด์",
+      "display_thai": "เนเธอร์แลนด์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เนปาล": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "80",
+      "item_name": "เนปาล",
+      "display_thai": "เนปาล",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ไนจีเรีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "81",
+      "item_name": "ไนจีเรีย",
+      "display_thai": "ไนจีเรีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ไนเจอร์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "82",
+      "item_name": "ไนเจอร์",
+      "display_thai": "ไนเจอร์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "บราซิล": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "83",
+      "item_name": "บราซิล",
+      "display_thai": "บราซิล",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "บรูไน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "84",
+      "item_name": "บรูไน",
+      "display_thai": "บรูไน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "บอตสวานา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "85",
+      "item_name": "บอตสวานา",
+      "display_thai": "บอตสวานา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "บอสเนียและเฮอร์เซโกวีนา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "86",
+      "item_name": "บอสเนียและเฮอร์เซโกวีนา",
+      "display_thai": "บอสเนียและเฮอร์เซโกวีนา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "บังกลาเทศ": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "87",
+      "item_name": "บังกลาเทศ",
+      "display_thai": "บังกลาเทศ",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "บัลแกเรีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "88",
+      "item_name": "บัลแกเรีย",
+      "display_thai": "บัลแกเรีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "บาร์เบโดส": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "89",
+      "item_name": "บาร์เบโดส",
+      "display_thai": "บาร์เบโดส",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "บาห์เรน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "90",
+      "item_name": "บาห์เรน",
+      "display_thai": "บาห์เรน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "บาฮามาส": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "91",
+      "item_name": "บาฮามาส",
+      "display_thai": "บาฮามาส",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "บุรุนดี": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "92",
+      "item_name": "บุรุนดี",
+      "display_thai": "บุรุนดี",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "บูร์กินาฟาโซ": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "93",
+      "item_name": "บูร์กินาฟาโซ",
+      "display_thai": "บูร์กินาฟาโซ",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เบนิน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "94",
+      "item_name": "เบนิน",
+      "display_thai": "เบนิน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เบลเยียม": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "95",
+      "item_name": "เบลเยียม",
+      "display_thai": "เบลเยียม",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เบลารุส": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "96",
+      "item_name": "เบลารุส",
+      "display_thai": "เบลารุส",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เบลีซ": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "97",
+      "item_name": "เบลีซ",
+      "display_thai": "เบลีซ",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "โบลิเวีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "98",
+      "item_name": "โบลิเวีย",
+      "display_thai": "โบลิเวีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ปากีสถาน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "99",
+      "item_name": "ปากีสถาน",
+      "display_thai": "ปากีสถาน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ปานามา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "100",
+      "item_name": "ปานามา",
+      "display_thai": "ปานามา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ปาปัวนิวกินี": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "101",
+      "item_name": "ปาปัวนิวกินี",
+      "display_thai": "ปาปัวนิวกินี",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ปารากวัย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "102",
+      "item_name": "ปารากวัย",
+      "display_thai": "ปารากวัย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ปาเลสไตน์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "103",
+      "item_name": "ปาเลสไตน์",
+      "display_thai": "ปาเลสไตน์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ปาเลา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "104",
+      "item_name": "ปาเลา",
+      "display_thai": "ปาเลา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เปรู": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "105",
+      "item_name": "เปรู",
+      "display_thai": "เปรู",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "โปรตุเกส": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "106",
+      "item_name": "โปรตุเกส",
+      "display_thai": "โปรตุเกส",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "โปแลนด์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "107",
+      "item_name": "โปแลนด์",
+      "display_thai": "โปแลนด์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ฝรั่งเศส": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "108",
+      "item_name": "ฝรั่งเศส",
+      "display_thai": "ฝรั่งเศส",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "พม่า": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "109",
+      "item_name": "พม่า",
+      "display_thai": "พม่า",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ฟีจี": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "110",
+      "item_name": "ฟีจี",
+      "display_thai": "ฟีจี",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ฟินแลนด์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "111",
+      "item_name": "ฟินแลนด์",
+      "display_thai": "ฟินแลนด์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ฟิลิปปินส์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "112",
+      "item_name": "ฟิลิปปินส์",
+      "display_thai": "ฟิลิปปินส์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ภูฏาน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "113",
+      "item_name": "ภูฏาน",
+      "display_thai": "ภูฏาน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "มองโกเลีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "114",
+      "item_name": "มองโกเลีย",
+      "display_thai": "มองโกเลีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "มอนเตเนโกร": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "115",
+      "item_name": "มอนเตเนโกร",
+      "display_thai": "มอนเตเนโกร",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "มอริเชียส": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "116",
+      "item_name": "มอริเชียส",
+      "display_thai": "มอริเชียส",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "มอริเตเนีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "117",
+      "item_name": "มอริเตเนีย",
+      "display_thai": "มอริเตเนีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "มอลโดวา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "118",
+      "item_name": "มอลโดวา",
+      "display_thai": "มอลโดวา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "มอลตา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "119",
+      "item_name": "มอลตา",
+      "display_thai": "มอลตา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "มัลดีฟส์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "120",
+      "item_name": "มัลดีฟส์",
+      "display_thai": "มัลดีฟส์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "มาดากัสการ์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "121",
+      "item_name": "มาดากัสการ์",
+      "display_thai": "มาดากัสการ์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "มาลาวี": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "122",
+      "item_name": "มาลาวี",
+      "display_thai": "มาลาวี",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "มาลี": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "123",
+      "item_name": "มาลี",
+      "display_thai": "มาลี",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "มาเลเซีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "124",
+      "item_name": "มาเลเซีย",
+      "display_thai": "มาเลเซีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เม็กซิโก": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "125",
+      "item_name": "เม็กซิโก",
+      "display_thai": "เม็กซิโก",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "โมซัมบิก": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "126",
+      "item_name": "โมซัมบิก",
+      "display_thai": "โมซัมบิก",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "โมนาโก": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "127",
+      "item_name": "โมนาโก",
+      "display_thai": "โมนาโก",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "โมร็อกโก": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "128",
+      "item_name": "โมร็อกโก",
+      "display_thai": "โมร็อกโก",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ไมโครนีเซีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "129",
+      "item_name": "ไมโครนีเซีย",
+      "display_thai": "ไมโครนีเซีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ยูกันดา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "130",
+      "item_name": "ยูกันดา",
+      "display_thai": "ยูกันดา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ยูเครน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "131",
+      "item_name": "ยูเครน",
+      "display_thai": "ยูเครน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เยเมน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "132",
+      "item_name": "เยเมน",
+      "display_thai": "เยเมน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เยอรมนี": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "133",
+      "item_name": "เยอรมนี",
+      "display_thai": "เยอรมนี",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "รวันดา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "134",
+      "item_name": "รวันดา",
+      "display_thai": "รวันดา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "รัสเซีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "135",
+      "item_name": "รัสเซีย",
+      "display_thai": "รัสเซีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "โรมาเนีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "136",
+      "item_name": "โรมาเนีย",
+      "display_thai": "โรมาเนีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ลักเซมเบิร์ก": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "137",
+      "item_name": "ลักเซมเบิร์ก",
+      "display_thai": "ลักเซมเบิร์ก",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ลัตเวีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "138",
+      "item_name": "ลัตเวีย",
+      "display_thai": "ลัตเวีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ลาว": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "139",
+      "item_name": "ลาว",
+      "display_thai": "ลาว",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ลิกเตนสไตน์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "140",
+      "item_name": "ลิกเตนสไตน์",
+      "display_thai": "ลิกเตนสไตน์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ลิทัวเนีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "141",
+      "item_name": "ลิทัวเนีย",
+      "display_thai": "ลิทัวเนีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ลิเบีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "142",
+      "item_name": "ลิเบีย",
+      "display_thai": "ลิเบีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เลโซโท": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "143",
+      "item_name": "เลโซโท",
+      "display_thai": "เลโซโท",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เลบานอน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "144",
+      "item_name": "เลบานอน",
+      "display_thai": "เลบานอน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ไลบีเรีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "145",
+      "item_name": "ไลบีเรีย",
+      "display_thai": "ไลบีเรีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "วานูวาตู": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "146",
+      "item_name": "วานูวาตู",
+      "display_thai": "วานูวาตู",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เวเนซุเอลา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "147",
+      "item_name": "เวเนซุเอลา",
+      "display_thai": "เวเนซุเอลา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เวียดนาม": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "148",
+      "item_name": "เวียดนาม",
+      "display_thai": "เวียดนาม",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ศรีลังกา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "149",
+      "item_name": "ศรีลังกา",
+      "display_thai": "ศรีลังกา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "สเปน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "150",
+      "item_name": "สเปน",
+      "display_thai": "สเปน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "สโลวาเกีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "151",
+      "item_name": "สโลวาเกีย",
+      "display_thai": "สโลวาเกีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "สโลวีเนีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "152",
+      "item_name": "สโลวีเนีย",
+      "display_thai": "สโลวีเนีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "สวิตเซอร์แลนด์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "153",
+      "item_name": "สวิตเซอร์แลนด์",
+      "display_thai": "สวิตเซอร์แลนด์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "สวีเดน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "154",
+      "item_name": "สวีเดน",
+      "display_thai": "สวีเดน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "อเมริกัน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "155",
+      "item_name": "อเมริกัน",
+      "display_thai": "อเมริกัน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "สหรัฐอาหรับเอมิเรตส์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "156",
+      "item_name": "สหรัฐอาหรับเอมิเรตส์",
+      "display_thai": "สหรัฐอาหรับเอมิเรตส์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "อังกฤษ": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "157",
+      "item_name": "อังกฤษ",
+      "display_thai": "อังกฤษ",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "คองโก": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "158",
+      "item_name": "คองโก",
+      "display_thai": "คองโก",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "โดมินิกัน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "159",
+      "item_name": "โดมินิกัน",
+      "display_thai": "โดมินิกัน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "แอฟริกา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "160",
+      "item_name": "แอฟริกา",
+      "display_thai": "แอฟริกา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "สิงคโปร์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "161",
+      "item_name": "สิงคโปร์",
+      "display_thai": "สิงคโปร์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ออสเตรเลีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "162",
+      "item_name": "ออสเตรเลีย",
+      "display_thai": "ออสเตรเลีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ออสเตรีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "163",
+      "item_name": "ออสเตรีย",
+      "display_thai": "ออสเตรีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "อันดอร์รา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "164",
+      "item_name": "อันดอร์รา",
+      "display_thai": "อันดอร์รา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "อัฟกานิสถาน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "165",
+      "item_name": "อัฟกานิสถาน",
+      "display_thai": "อัฟกานิสถาน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "อาเซอร์ไบจาน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "166",
+      "item_name": "อาเซอร์ไบจาน",
+      "display_thai": "อาเซอร์ไบจาน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "อาร์เจนตินา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "167",
+      "item_name": "อาร์เจนตินา",
+      "display_thai": "อาร์เจนตินา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "อาร์มีเนีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "168",
+      "item_name": "อาร์มีเนีย",
+      "display_thai": "อาร์มีเนีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "อิเควทอเรียลกินี": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "169",
+      "item_name": "อิเควทอเรียลกินี",
+      "display_thai": "อิเควทอเรียลกินี",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "อิตาลี": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "170",
+      "item_name": "อิตาลี",
+      "display_thai": "อิตาลี",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "อินเดีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "171",
+      "item_name": "อินเดีย",
+      "display_thai": "อินเดีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "อินโดนีเซีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "172",
+      "item_name": "อินโดนีเซีย",
+      "display_thai": "อินโดนีเซีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "อิรัก": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "173",
+      "item_name": "อิรัก",
+      "display_thai": "อิรัก",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "อิสราเอล": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "174",
+      "item_name": "อิสราเอล",
+      "display_thai": "อิสราเอล",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "อิหร่าน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "175",
+      "item_name": "อิหร่าน",
+      "display_thai": "อิหร่าน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "อียิปต์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "176",
+      "item_name": "อียิปต์",
+      "display_thai": "อียิปต์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "อุซเบกิสถาน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "177",
+      "item_name": "อุซเบกิสถาน",
+      "display_thai": "อุซเบกิสถาน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "อุรุกวัย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "178",
+      "item_name": "อุรุกวัย",
+      "display_thai": "อุรุกวัย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เอกวาดอร์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "179",
+      "item_name": "เอกวาดอร์",
+      "display_thai": "เอกวาดอร์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เอธิโอเปีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "180",
+      "item_name": "เอธิโอเปีย",
+      "display_thai": "เอธิโอเปีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เอริเทรีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "181",
+      "item_name": "เอริเทรีย",
+      "display_thai": "เอริเทรีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เอลซัลวาดอร์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "182",
+      "item_name": "เอลซัลวาดอร์",
+      "display_thai": "เอลซัลวาดอร์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เอสโตเนีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "183",
+      "item_name": "เอสโตเนีย",
+      "display_thai": "เอสโตเนีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เอสวาตีนี": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "184",
+      "item_name": "เอสวาตีนี",
+      "display_thai": "เอสวาตีนี",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "แองโกลา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "185",
+      "item_name": "แองโกลา",
+      "display_thai": "แองโกลา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "แอนติกาและบาร์บูดา": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "186",
+      "item_name": "แอนติกาและบาร์บูดา",
+      "display_thai": "แอนติกาและบาร์บูดา",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "แอฟริกาใต้": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "187",
+      "item_name": "แอฟริกาใต้",
+      "display_thai": "แอฟริกาใต้",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "แอลจีเรีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "188",
+      "item_name": "แอลจีเรีย",
+      "display_thai": "แอลจีเรีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "แอลเบเนีย": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "189",
+      "item_name": "แอลเบเนีย",
+      "display_thai": "แอลเบเนีย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "โอมาน": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "190",
+      "item_name": "โอมาน",
+      "display_thai": "โอมาน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ไอซ์แลนด์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "191",
+      "item_name": "ไอซ์แลนด์",
+      "display_thai": "ไอซ์แลนด์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ไอร์แลนด์": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "192",
+      "item_name": "ไอร์แลนด์",
+      "display_thai": "ไอร์แลนด์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ฮอนดูรัส": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "193",
+      "item_name": "ฮอนดูรัส",
+      "display_thai": "ฮอนดูรัส",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ฮังการี": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "194",
+      "item_name": "ฮังการี",
+      "display_thai": "ฮังการี",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เฮติ": {
+      "parameter": "cdPersonNationalityCode",
+      "item_id": "195",
+      "item_name": "เฮติ",
+      "display_thai": "เฮติ",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    }
+  },
+  "crPersonNameTitleCode": {
+    "Master": {
+      "parameter": "crPersonNameTitleCode",
+      "item_id": "1",
+      "item_name": "Master",
+      "display_thai": "เด็กชาย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "Miss": {
+      "parameter": "crPersonNameTitleCode",
+      "item_id": "2",
+      "item_name": "Miss",
+      "display_thai": "เด็กหญิง",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "Mr.": {
+      "parameter": "crPersonNameTitleCode",
+      "item_id": "3",
+      "item_name": "Mr.",
+      "display_thai": "นาย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "Mrs.": {
+      "parameter": "crPersonNameTitleCode",
+      "item_id": "5",
+      "item_name": "Mrs.",
+      "display_thai": "นาง",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    }
+  },
+  "cdPersonGenderCode": {
+    "Not Known": {
+      "parameter": "cdPersonGenderCode",
+      "item_id": "0",
+      "item_name": "Not Known",
+      "display_thai": "ไม่ทราบ",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "Male": {
+      "parameter": "cdPersonGenderCode",
+      "item_id": "1",
+      "item_name": "Male",
+      "display_thai": "ชาย",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "Female": {
+      "parameter": "cdPersonGenderCode",
+      "item_id": "2",
+      "item_name": "Female",
+      "display_thai": "หญิง",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "Not Applicable": {
+      "parameter": "cdPersonGenderCode",
+      "item_id": "9",
+      "item_name": "Not Applicable",
+      "display_thai": "ไม่สามารถระบุเพศได้",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    }
+  },
+  "emPatientCommitStatusCode": {
+    "Green 1.0": {
+      "parameter": "emPatientCommitStatusCode",
+      "item_id": "1",
+      "item_name": "Green 1.0",
+      "display_thai": "เขียว 1.0",
+      "is_active": "TRUE",
+      "colink_feild": "2"
+    },
+    "Green 1.5": {
+      "parameter": "emPatientCommitStatusCode",
+      "item_id": "2",
+      "item_name": "Green 1.5",
+      "display_thai": "เขียว 1.5",
+      "is_active": "TRUE",
+      "colink_feild": "2"
+    },
+    "Yellow 2.0": {
+      "parameter": "emPatientCommitStatusCode",
+      "item_id": "3",
+      "item_name": "Yellow 2.0",
+      "display_thai": "เหลือง 2.0",
+      "is_active": "TRUE",
+      "colink_feild": "3"
+    },
+    "Yellow 2.5": {
+      "parameter": "emPatientCommitStatusCode",
+      "item_id": "4",
+      "item_name": "Yellow 2.5",
+      "display_thai": "เหลือง 2.5",
+      "is_active": "TRUE",
+      "colink_feild": "3"
+    },
+    "Red 3": {
+      "parameter": "emPatientCommitStatusCode",
+      "item_id": "5",
+      "item_name": "Red 3",
+      "display_thai": "แดง 3",
+      "is_active": "TRUE",
+      "colink_feild": "4"
+    },
+    "Red 3.5": {
+      "parameter": "emPatientCommitStatusCode",
+      "item_id": "6",
+      "item_name": "Red 3.5",
+      "display_thai": "แดง 3.5",
+      "is_active": "TRUE",
+      "colink_feild": "4"
+    }
+  },
+  "emHICICode": {
+    "Horganice": {
+      "parameter": "emHICICode",
+      "item_id": "1",
+      "item_name": "Horganice",
+      "display_thai": "Horganice CI",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "Amed": {
+      "parameter": "emHICICode",
+      "item_id": "2",
+      "item_name": "Amed",
+      "display_thai": "BKK HI/CI care",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    }
+  },
+  "emHICITypeCode": {
+    "HI": {
+      "parameter": "emHICITypeCode",
+      "item_id": "1",
+      "item_name": "HI",
+      "display_thai": "HI",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "CI": {
+      "parameter": "emHICITypeCode",
+      "item_id": "2",
+      "item_name": "CI",
+      "display_thai": "CI",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "CI+": {
+      "parameter": "emHICITypeCode",
+      "item_id": "3",
+      "item_name": "CI+",
+      "display_thai": "CI+",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    }
+  },
+  "emLocationType": {
+    "HI": {
+      "parameter": "emLocationType",
+      "item_id": "1",
+      "item_name": "HI",
+      "display_thai": "",
+      "is_active": "",
+      "colink_feild": ""
+    },
+    "CI": {
+      "parameter": "emLocationType",
+      "item_id": "2",
+      "item_name": "CI",
+      "display_thai": "",
+      "is_active": "",
+      "colink_feild": ""
+    },
+    "CI+": {
+      "parameter": "emLocationType",
+      "item_id": "3",
+      "item_name": "CI+",
+      "display_thai": "",
+      "is_active": "",
+      "colink_feild": ""
+    },
+    "Hospitel": {
+      "parameter": "emLocationType",
+      "item_id": "4",
+      "item_name": "Hospitel",
+      "display_thai": "",
+      "is_active": "",
+      "colink_feild": ""
+    },
+    "Field Hospital": {
+      "parameter": "emLocationType",
+      "item_id": "5",
+      "item_name": "Field Hospital",
+      "display_thai": "",
+      "is_active": "",
+      "colink_feild": ""
+    },
+    "Hospital": {
+      "parameter": "emLocationType",
+      "item_id": "6",
+      "item_name": "Hospital",
+      "display_thai": "",
+      "is_active": "",
+      "colink_feild": ""
+    }
+  },
+  "crZoneCode": {
+    "กลุ่มกรุงเทพกลาง": {
+      "parameter": "crZoneCode",
+      "item_id": "1",
+      "item_name": "กลุ่มกรุงเทพกลาง",
+      "display_thai": "กลุ่มกรุงเทพกลาง",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กลุ่มกรุงเทพใต้": {
+      "parameter": "crZoneCode",
+      "item_id": "2",
+      "item_name": "กลุ่มกรุงเทพใต้",
+      "display_thai": "กลุ่มกรุงเทพใต้",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กลุ่มกรุงเทพเหนือ": {
+      "parameter": "crZoneCode",
+      "item_id": "3",
+      "item_name": "กลุ่มกรุงเทพเหนือ",
+      "display_thai": "กลุ่มกรุงเทพเหนือ",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กลุ่มกรุงเทพตะวันออก": {
+      "parameter": "crZoneCode",
+      "item_id": "4",
+      "item_name": "กลุ่มกรุงเทพตะวันออก",
+      "display_thai": "กลุ่มกรุงเทพตะวันออก",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กลุ่มกรุงธนเหนือ": {
+      "parameter": "crZoneCode",
+      "item_id": "5",
+      "item_name": "กลุ่มกรุงธนเหนือ",
+      "display_thai": "กลุ่มกรุงธนเหนือ",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กลุ่มกรุงธนใต้": {
+      "parameter": "crZoneCode",
+      "item_id": "6",
+      "item_name": "กลุ่มกรุงธนใต้",
+      "display_thai": "กลุ่มกรุงธนใต้",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    }
+  },
+  "emSourceNumberCode": {
+    "1668": {
+      "parameter": "emSourceNumberCode",
+      "item_id": "1",
+      "item_name": "1668",
+      "display_thai": "1668",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "1669": {
+      "parameter": "emSourceNumberCode",
+      "item_id": "2",
+      "item_name": "1669",
+      "display_thai": "1669",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "1330": {
+      "parameter": "emSourceNumberCode",
+      "item_id": "3",
+      "item_name": "1330",
+      "display_thai": "1330",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "สปคม": {
+      "parameter": "emSourceNumberCode",
+      "item_id": "4",
+      "item_name": "สปคม",
+      "display_thai": "สปคม",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "1422": {
+      "parameter": "emSourceNumberCode",
+      "item_id": "5",
+      "item_name": "1422",
+      "display_thai": "1422",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "191": {
+      "parameter": "emSourceNumberCode",
+      "item_id": "6",
+      "item_name": "191",
+      "display_thai": "191",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "PAC": {
+      "parameter": "emSourceNumberCode",
+      "item_id": "7",
+      "item_name": "PAC",
+      "display_thai": "PAC",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "Lab/รพ.": {
+      "parameter": "emSourceNumberCode",
+      "item_id": "8",
+      "item_name": "Lab/รพ.",
+      "display_thai": "Lab/รพ.",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กอรมน.": {
+      "parameter": "emSourceNumberCode",
+      "item_id": "9",
+      "item_name": "กอรมน.",
+      "display_thai": "กอรมน.",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "สนอ": {
+      "parameter": "emSourceNumberCode",
+      "item_id": "10",
+      "item_name": "สนอ",
+      "display_thai": "สนอ",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "1300": {
+      "parameter": "emSourceNumberCode",
+      "item_id": "11",
+      "item_name": "1300",
+      "display_thai": "1300",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "1479": {
+      "parameter": "emSourceNumberCode",
+      "item_id": "12",
+      "item_name": "1479",
+      "display_thai": "1479",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ศบส": {
+      "parameter": "emSourceNumberCode",
+      "item_id": "13",
+      "item_name": "ศบส",
+      "display_thai": "ศบส",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "VirH": {
+      "parameter": "emSourceNumberCode",
+      "item_id": "14",
+      "item_name": "VirH",
+      "display_thai": "VirH",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "คลินิกอบอุ่น": {
+      "parameter": "emSourceNumberCode",
+      "item_id": "15",
+      "item_name": "คลินิกอบอุ่น",
+      "display_thai": "คลินิกอบอุ่น",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "HI/CI": {
+      "parameter": "emSourceNumberCode",
+      "item_id": "16",
+      "item_name": "HI/CI",
+      "display_thai": "HI/CI",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    }
+  },
+  "emMoveToLocationTypeCode": {
+    "": {
+      "parameter": "emMoveToLocationTypeCode",
+      "item_id": "1",
+      "item_name": "",
+      "display_thai": "",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เอกชน": {
+      "parameter": "emMoveToLocationTypeCode",
+      "item_id": "2",
+      "item_name": "เอกชน",
+      "display_thai": "เอกชน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กทม.": {
+      "parameter": "emMoveToLocationTypeCode",
+      "item_id": "3",
+      "item_name": "กทม.",
+      "display_thai": "กทม.",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กรมการแพทย์": {
+      "parameter": "emMoveToLocationTypeCode",
+      "item_id": "4",
+      "item_name": "กรมการแพทย์",
+      "display_thai": "กรมการแพทย์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "มหาวิทยาลัยแพทย์ (Uhosnet)": {
+      "parameter": "emMoveToLocationTypeCode",
+      "item_id": "5",
+      "item_name": "มหาวิทยาลัยแพทย์ (Uhosnet)",
+      "display_thai": "มหาวิทยาลัยแพทย์ (Uhosnet)",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "รพ.รัฐในปริมณฑล": {
+      "parameter": "emMoveToLocationTypeCode",
+      "item_id": "6",
+      "item_name": "รพ.รัฐในปริมณฑล",
+      "display_thai": "รพ.รัฐในปริมณฑล",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "รพ.รัฐนอกกทม.และปริมณฑล": {
+      "parameter": "emMoveToLocationTypeCode",
+      "item_id": "7",
+      "item_name": "รพ.รัฐนอกกทม.และปริมณฑล",
+      "display_thai": "รพ.รัฐนอกกทม.และปริมณฑล",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "รพ.สนาม/hospitel": {
+      "parameter": "emMoveToLocationTypeCode",
+      "item_id": "8",
+      "item_name": "รพ.สนาม/hospitel",
+      "display_thai": "รพ.สนาม/hospitel",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ไม่ทราบรพ.": {
+      "parameter": "emMoveToLocationTypeCode",
+      "item_id": "9",
+      "item_name": "ไม่ทราบรพ.",
+      "display_thai": "ไม่ทราบรพ.",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เหล่าทัพ (ตร./ ทบ./ ทอ./ ทร.)": {
+      "parameter": "emMoveToLocationTypeCode",
+      "item_id": "10",
+      "item_name": "เหล่าทัพ (ตร./ ทบ./ ทอ./ ทร.)",
+      "display_thai": "เหล่าทัพ (ตร./ ทบ./ ทอ./ ทร.)",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กรมสนับสนุนบริการสุขภาพ": {
+      "parameter": "emMoveToLocationTypeCode",
+      "item_id": "11",
+      "item_name": "กรมสนับสนุนบริการสุขภาพ",
+      "display_thai": "กรมสนับสนุนบริการสุขภาพ",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กลับบ้านต่างจังหวัด": {
+      "parameter": "emMoveToLocationTypeCode",
+      "item_id": "12",
+      "item_name": "กลับบ้านต่างจังหวัด",
+      "display_thai": "กลับบ้านต่างจังหวัด",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    }
+  },
+  "emMoveFromLocationTypeCode": {
+    "": {
+      "parameter": "emMoveFromLocationTypeCode",
+      "item_id": "1",
+      "item_name": "",
+      "display_thai": "",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เอกชน": {
+      "parameter": "emMoveFromLocationTypeCode",
+      "item_id": "2",
+      "item_name": "เอกชน",
+      "display_thai": "เอกชน",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กทม.": {
+      "parameter": "emMoveFromLocationTypeCode",
+      "item_id": "3",
+      "item_name": "กทม.",
+      "display_thai": "กทม.",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กรมการแพทย์": {
+      "parameter": "emMoveFromLocationTypeCode",
+      "item_id": "4",
+      "item_name": "กรมการแพทย์",
+      "display_thai": "กรมการแพทย์",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "มหาวิทยาลัยแพทย์ (Uhosnet)": {
+      "parameter": "emMoveFromLocationTypeCode",
+      "item_id": "5",
+      "item_name": "มหาวิทยาลัยแพทย์ (Uhosnet)",
+      "display_thai": "มหาวิทยาลัยแพทย์ (Uhosnet)",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "รพ.รัฐในปริมณฑล": {
+      "parameter": "emMoveFromLocationTypeCode",
+      "item_id": "6",
+      "item_name": "รพ.รัฐในปริมณฑล",
+      "display_thai": "รพ.รัฐในปริมณฑล",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "รพ.รัฐนอกกทม.และปริมณฑล": {
+      "parameter": "emMoveFromLocationTypeCode",
+      "item_id": "7",
+      "item_name": "รพ.รัฐนอกกทม.และปริมณฑล",
+      "display_thai": "รพ.รัฐนอกกทม.และปริมณฑล",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "รพ.สนาม/hospitel": {
+      "parameter": "emMoveFromLocationTypeCode",
+      "item_id": "8",
+      "item_name": "รพ.สนาม/hospitel",
+      "display_thai": "รพ.สนาม/hospitel",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ไม่ทราบรพ.": {
+      "parameter": "emMoveFromLocationTypeCode",
+      "item_id": "9",
+      "item_name": "ไม่ทราบรพ.",
+      "display_thai": "ไม่ทราบรพ.",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เหล่าทัพ (ตร./ ทบ./ ทอ./ ทร.)": {
+      "parameter": "emMoveFromLocationTypeCode",
+      "item_id": "10",
+      "item_name": "เหล่าทัพ (ตร./ ทบ./ ทอ./ ทร.)",
+      "display_thai": "เหล่าทัพ (ตร./ ทบ./ ทอ./ ทร.)",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กรมสนับสนุนบริการสุขภาพ": {
+      "parameter": "emMoveFromLocationTypeCode",
+      "item_id": "11",
+      "item_name": "กรมสนับสนุนบริการสุขภาพ",
+      "display_thai": "กรมสนับสนุนบริการสุขภาพ",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "กลับบ้านต่างจังหวัด": {
+      "parameter": "emMoveFromLocationTypeCode",
+      "item_id": "12",
+      "item_name": "กลับบ้านต่างจังหวัด",
+      "display_thai": "กลับบ้านต่างจังหวัด",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    }
+  },
+  "emMoveToMethodCode": {
+    "": {
+      "parameter": "emMoveToMethodCode",
+      "item_id": "1",
+      "item_name": "",
+      "display_thai": "",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "เดินทางเอง": {
+      "parameter": "emMoveToMethodCode",
+      "item_id": "2",
+      "item_name": "เดินทางเอง",
+      "display_thai": "เดินทางเอง",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ปฏิเสธ": {
+      "parameter": "emMoveToMethodCode",
+      "item_id": "3",
+      "item_name": "ปฏิเสธ",
+      "display_thai": "ปฏิเสธ",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ขอรถสพฉ": {
+      "parameter": "emMoveToMethodCode",
+      "item_id": "4",
+      "item_name": "ขอรถสพฉ",
+      "display_thai": "ขอรถสพฉ",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "ขอรถ1669": {
+      "parameter": "emMoveToMethodCode",
+      "item_id": "5",
+      "item_name": "ขอรถ1669",
+      "display_thai": "ขอรถ1669",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "สพฉปิดเคส": {
+      "parameter": "emMoveToMethodCode",
+      "item_id": "6",
+      "item_name": "สพฉปิดเคส",
+      "display_thai": "สพฉปิดเคส",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "1669ปิดเคส": {
+      "parameter": "emMoveToMethodCode",
+      "item_id": "7",
+      "item_name": "1669ปิดเคส",
+      "display_thai": "1669ปิดเคส",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    }
+  },
+  "hsPatientHealthCoverage": {
+    "สิทธิสวัสดิการการรักษาพยาบาลของข้าราชการ": {
+      "parameter": "hsPatientHealthCoverage",
+      "item_id": "1",
+      "item_name": "สิทธิสวัสดิการการรักษาพยาบาลของข้าราชการ",
+      "display_thai": "",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "สิทธิหลักประกันสุขภาพแห่งชาติ": {
+      "parameter": "hsPatientHealthCoverage",
+      "item_id": "2",
+      "item_name": "สิทธิหลักประกันสุขภาพแห่งชาติ",
+      "display_thai": "",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "สิทธิประกันสังคม": {
+      "parameter": "hsPatientHealthCoverage",
+      "item_id": "3",
+      "item_name": "สิทธิประกันสังคม",
+      "display_thai": "",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "สิทธิสวัสดิการการรักษาพยาบาลของพนักงานส่วนท้องถิ่น": {
+      "parameter": "hsPatientHealthCoverage",
+      "item_id": "4",
+      "item_name": "สิทธิสวัสดิการการรักษาพยาบาลของพนักงานส่วนท้องถิ่น",
+      "display_thai": "",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "สิทธิต่างชาติ/ต่างด้าว": {
+      "parameter": "hsPatientHealthCoverage",
+      "item_id": "5",
+      "item_name": "สิทธิต่างชาติ/ต่างด้าว",
+      "display_thai": "",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    },
+    "สิทธิหน่วยงานรัฐอื่นๆ": {
+      "parameter": "hsPatientHealthCoverage",
+      "item_id": "6",
+      "item_name": "สิทธิหน่วยงานรัฐอื่นๆ",
+      "display_thai": "",
+      "is_active": "TRUE",
+      "colink_feild": ""
+    }
+  }
+}

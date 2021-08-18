@@ -18,6 +18,9 @@
   let checkInDate: string;
   let checkOutDate: string;
   let sexId;
+  let lineId: string = "";
+  let homeTown: string = "";
+  let remark: string = "";
 </script>
 
 <div class="form-basic-info">
@@ -58,6 +61,16 @@
     placeholder=""
     bind:value={custodiaPhone}
   />
+  <Row>
+    <Column>
+      <TextInput labelText="LINE ID" placeholder="" bind:value={lineId} />
+    </Column>
+  </Row>
+  <Row>
+    <Column>
+      <TextInput labelText="ภูมิลำเนา" placeholder="" bind:value={homeTown} />
+    </Column>
+  </Row>
   <DatePicker datePickerType="single" on:change>
     <DatePickerInput
       labelText="วันที่เข้าสู่ระบบ (ระบบที่นิยามไว้) "
@@ -72,6 +85,11 @@
       bind:value={checkOutDate}
     />
   </DatePicker>
+  <Row>
+    <Column>
+      <TextInput labelText="หมายเหตุ" placeholder="" bind:value={remark} />
+    </Column>
+  </Row>
 </div>
 
 <style scoped>

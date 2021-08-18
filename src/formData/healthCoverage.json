@@ -1,0 +1,50 @@
+{
+  "สิทธิสวัสดิการการรักษาพยาบาลของข้าราชการ": {
+    "parameter": "hsPatientHealthCoverage",
+    "item_id": "1",
+    "item_name": "สิทธิสวัสดิการการรักษาพยาบาลของข้าราชการ",
+    "display_thai": "",
+    "is_active": "TRUE",
+    "colink_feild": ""
+  },
+  "สิทธิหลักประกันสุขภาพแห่งชาติ": {
+    "parameter": "hsPatientHealthCoverage",
+    "item_id": "2",
+    "item_name": "สิทธิหลักประกันสุขภาพแห่งชาติ",
+    "display_thai": "",
+    "is_active": "TRUE",
+    "colink_feild": ""
+  },
+  "สิทธิประกันสังคม": {
+    "parameter": "hsPatientHealthCoverage",
+    "item_id": "3",
+    "item_name": "สิทธิประกันสังคม",
+    "display_thai": "",
+    "is_active": "TRUE",
+    "colink_feild": ""
+  },
+  "สิทธิสวัสดิการการรักษาพยาบาลของพนักงานส่วนท้องถิ่น": {
+    "parameter": "hsPatientHealthCoverage",
+    "item_id": "4",
+    "item_name": "สิทธิสวัสดิการการรักษาพยาบาลของพนักงานส่วนท้องถิ่น",
+    "display_thai": "",
+    "is_active": "TRUE",
+    "colink_feild": ""
+  },
+  "สิทธิต่างชาติ/ต่างด้าว": {
+    "parameter": "hsPatientHealthCoverage",
+    "item_id": "5",
+    "item_name": "สิทธิต่างชาติ/ต่างด้าว",
+    "display_thai": "",
+    "is_active": "TRUE",
+    "colink_feild": ""
+  },
+  "สิทธิหน่วยงานรัฐอื่นๆ": {
+    "parameter": "hsPatientHealthCoverage",
+    "item_id": "6",
+    "item_name": "สิทธิหน่วยงานรัฐอื่นๆ",
+    "display_thai": "",
+    "is_active": "TRUE",
+    "colink_feild": ""
+  }
+}

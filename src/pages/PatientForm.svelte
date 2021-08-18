@@ -7,6 +7,7 @@
   import LocationForm from "../components/LocationForm.svelte";
   import LabForm from "../components/LabForm.svelte";
   import Questionnaire from "../components/Questionnaire.svelte";
+  import VaccineHistoryForm from "../components/VaccineHistoryForm.svelte";
 
   let imageUrl = {
     uploadedNationalIdCard: "",
@@ -63,6 +64,7 @@
       <InfoForm />
       <LocationForm />
       <LabForm />
+      <VaccineHistoryForm />
       <Questionnaire />
       <div class="submit-button-container">
         <Button type="submit">ส่งข้อมูล</Button>
