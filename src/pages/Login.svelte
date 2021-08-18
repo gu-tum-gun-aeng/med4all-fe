@@ -3,17 +3,25 @@
   import { requestOtp } from "../api/auth";
   import { router } from "tinro";
   import { setRequestId, setMobileNumber } from "../stores/otp";
+  import Errors from "../errors";
 
   let mobileNumber: string = "";
+  let errorDisplay: string = "";
 
   const handleLoginClick = async () => {
     try {
       const response = await requestOtp(mobileNumber);
+
       setMobileNumber(mobileNumber);
       setRequestId(response.data.results.requestId);
       router.goto("/verifyotp");
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      if (err.response.data.status === 500) {
+        const errorResponse = Errors.find(
+          (error) => error.name === err.response.data.name
+        );
+        errorDisplay = errorResponse.displayText;
+      }
     }
   };
 </script>
@@ -24,7 +32,15 @@
     <TextInput
       labelText="เบอร์โทรศัพท์"
       placeholder="ตัวอย่าง 08xyyyzzzz"
+      invalid={errorDisplay.length > 0}
+      invalidText={errorDisplay}
       bind:value={mobileNumber}
+      on:change={() => {
+        errorDisplay = "";
+      }}
+      on:focus={() => {
+        errorDisplay = "";
+      }}
     />
   </div>
   <div class="login-button">
@@ -55,5 +71,10 @@
 
   .login-button {
     margin-top: 100px;
+  }
+
+  .noti-container {
+    position: absolute;
+    bottom: 100px;
   }
 </style>
