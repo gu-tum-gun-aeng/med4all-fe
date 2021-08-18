@@ -23,8 +23,8 @@
   </Row>
   <Row>
     <Column>
-        <Checkbox labelText="มีผลการตรวจ RT-PCR" bind:checked={isRtPcrPositive} />
-      </Column>
+      <Checkbox labelText="มีผลการตรวจ RT-PCR" bind:checked={isRtPcrPositive} />
+    </Column>
   </Row>
   <Row>
     <Column>

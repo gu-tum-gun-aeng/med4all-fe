@@ -5,13 +5,30 @@
     NumberInput,
     Checkbox,
     MultiSelect,
+    TextArea,
   } from "carbon-components-svelte";
   import ModifiedSelectableTile from "./ModifiedSelectableTile.svelte";
+  import InputTags from "./InputTags.svelte";
   import underlyingDiseases from "../formData/underlyingDiseases";
-  import symptoms from "../formData/symptoms";
+  import symptomsList from "../formData/symptoms";
 
   let weight: number = 0;
   let height: number = 0;
+
+  let bodyTemperatureCelcius: number;
+  let pulseRateBpm: number;
+  let oxygenSaturation: number;
+  let oxygenSaturationAfterExercise: number;
+  let oxygenSaturationDifference: number;
+  let systolic: number;
+  let diastolic: number;
+  let inspirationRate: number;
+  let isPregnant: boolean = false;
+  let pregnancyWeeks: number | null = null;
+  let isBedridden: boolean = false;
+  let symptoms: string = "";
+  let allergyToDrugs: string[] = [];
+  let allergyToFoods: string[] = [];
 
   let hasUnderlyingDisease = false;
 
@@ -29,7 +46,9 @@
     selectedSymptomsDisplay = selectedSymptoms
       .map(
         (selectedSymptom) =>
-          symptoms.find((symptom) => symptom.value === selectedSymptom)["text"]
+          symptomsList.find((symptom) => symptom.value === selectedSymptom)[
+            "text"
+          ]
       )
       .join(", ");
   }
@@ -57,14 +76,134 @@
   </Row>
   <Row>
     <Column>
-      <h3>มีโรคประจำตัวไหม</h3>
-      <Checkbox labelText="มี" bind:checked={hasUnderlyingDisease} />
+      <NumberInput
+        bind:value={bodyTemperatureCelcius}
+        label="อุณหภูมิล่าสุด"
+        max={100}
+        min={0}
+      />
+    </Column>
+    <Column>
+      <NumberInput
+        bind:value={pulseRateBpm}
+        label="ชีพจรล่าสุด"
+        max={1000}
+        min={0}
+      />
+    </Column>
+  </Row>
+  <Row>
+    <Column>
+      <NumberInput
+        bind:value={oxygenSaturation}
+        label="ค่าออกซิเจนขณะพักล่าสุด"
+        max={1000}
+        min={0}
+      />
+    </Column>
+  </Row>
+  <Row>
+    <Column>
+      <NumberInput
+        bind:value={oxygenSaturationAfterExercise}
+        label="ค่าออกซิเจนหลังออกกำลังล่าสุด"
+        max={1000}
+        min={0}
+      />
+    </Column>
+  </Row>
+  <Row>
+    <Column>
+      <NumberInput
+        bind:value={oxygenSaturationDifference}
+        label="ค่าความแตกต่างของออกซิเจน"
+        max={1000}
+        min={0}
+      />
+    </Column>
+  </Row>
+  <Row>
+    <Column>
+      <NumberInput
+        bind:value={systolic}
+        label="ค่าความดันโลหิตตัวบนล่าสุด"
+        max={1000}
+        min={0}
+      />
+    </Column>
+    <Column>
+      <NumberInput
+        bind:value={diastolic}
+        label="ค่าความดันโลหิตตัวล่างล่าสุด"
+        max={1000}
+        min={0}
+      />
+    </Column>
+  </Row>
+  <Row>
+    <Column>
+      <NumberInput
+        bind:value={inspirationRate}
+        label="อัตราการหายใจล่าสุด"
+        max={1000}
+        min={0}
+      />
+    </Column>
+  </Row>
+  <Row>
+    <Column>
+      <Checkbox labelText="มีการตั้งครรภ์" bind:checked={isPregnant} />
+    </Column>
+  </Row>
+  {#if isPregnant}
+    <Row>
+      <Column>
+        <NumberInput
+          label="จำนวนสัปดาห์ที่ตั้งครรภ์"
+          bind:value={pregnancyWeeks}
+          max={1000}
+          min={0}
+        />
+      </Column>
+    </Row>
+  {/if}
+  <Row>
+    <Column>
+      <Checkbox labelText="ผู้ป่วยติดเตียง" bind:checked={isBedridden} />
+    </Column>
+  </Row>
+  <Row>
+    <Column>
+      <TextArea labelText="อาการทั่วไปล่าสุด" bind:value={symptoms} />
+    </Column>
+  </Row>
+  <Row>
+    <Column>
+      <InputTags
+        labelText="การแพ้ยา"
+        placeholder="กรุณากรอกและกด enter"
+        bind:tags={allergyToDrugs}
+      />
+    </Column>
+  </Row>
+  <Row>
+    <Column>
+      <InputTags
+        labelText="การแพ้อาหาร"
+        placeholder="กรุณากรอกและกด enter"
+        bind:tags={allergyToFoods}
+      />
+    </Column>
+  </Row>
+  <Row>
+    <Column>
+      <Checkbox labelText="มีโรคประจำตัว" bind:checked={hasUnderlyingDisease} />
     </Column>
   </Row>
   {#if hasUnderlyingDisease === true}
     <Row>
       <Column>
-        <p>กรุณาคลิกเพื่อเพิ่มโรคประจำตัว</p>
+        <p>กรุณาคลิกเลือกโรคประจำตัวที่มี</p>
         {#each underlyingDiseases as underlyingDisease}
           <ModifiedSelectableTile
             bind:group={selectedUnderlyingDiseases}
@@ -88,7 +227,10 @@
       <MultiSelect
         titleText=""
         label="กรุณาคลิกเพื่อเลือกอาการที่พบ"
-        items={symptoms.map((symptom) => ({ ...symptom, id: symptom.value }))}
+        items={symptomsList.map((symptom) => ({
+          ...symptom,
+          id: symptom.value,
+        }))}
         value={"test"}
         bind:selectedIds={selectedSymptoms}
       />

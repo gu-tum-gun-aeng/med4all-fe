@@ -1,21 +1,12 @@
 <script lang="ts">
-  import {
-    TextInput,
-    Form,
-    NumberInput,
-    Button,
-    Row,
-    Column,
-  } from "carbon-components-svelte";
+  import { Form, Button } from "carbon-components-svelte";
   import { uploadImage } from "../api/patient";
   import type { UploadImageSuccessResponseData } from "../api/patient";
   import ImageUploader from "../components/ImageUploader.svelte";
-  import Questionnaire from "../components/Questionnaire.svelte";
+  import InfoForm from "../components/InfoForm.svelte";
   import LocationForm from "../components/LocationForm.svelte";
   import LabForm from "../components/LabForm.svelte";
-
-  let patientPhone = "";
-  let custodiaPhone = "";
+  import Questionnaire from "../components/Questionnaire.svelte";
 
   let imageUrl = {
     uploadedNationalIdCard: "",
@@ -69,35 +60,13 @@
       />
     </div>
     <Form on:submit={handleOnSubmit}>
-      <div class="form-basic-info">
-        <TextInput
-          labelText="เลขบัตรประชาชน หรือ รหัสประจำตัวคนต่างด้าว หรือ เลขpassport"
-          placeholder=""
-        />
-        <Row>
-          <Column>
-            <TextInput labelText="ชื่อจริง" placeholder="" />
-          </Column>
-          <Column>
-            <TextInput labelText="นามสกุล" placeholder="" />
-          </Column>
-        </Row>
-        <NumberInput max={150} min={15} value={15} label="อายุ" />
-        <TextInput
-          labelText="เบอร์โทรศัพท์ติดต่อผู้ป่วย"
-          placeholder=""
-          bind:value={patientPhone}
-        />
-        <TextInput
-          labelText="เบอร์โทรศัพท์ญาติผู้ป่วย"
-          placeholder=""
-          bind:value={custodiaPhone}
-        />
-      </div>
+      <InfoForm />
       <LocationForm />
       <LabForm />
       <Questionnaire />
-      <Button type="submit">ส่งข้อมูล</Button>
+      <div class="submit-button-container">
+        <Button type="submit">ส่งข้อมูล</Button>
+      </div>
     </Form>
   </div>
 </main>
@@ -115,15 +84,14 @@
     margin-bottom: 30px;
   }
 
-  .form-basic-info {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
   h1 {
     color: black;
     font-size: 40px;
     font-family: "IBM Plex Sans Thai";
     font-weight: 400;
+  }
+
+  .submit-button-container {
+    margin-top: 100px;
   }
 </style>

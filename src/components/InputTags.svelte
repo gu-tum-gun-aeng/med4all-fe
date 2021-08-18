@@ -1,8 +1,11 @@
 <script lang="ts">
   import { TextInput, Tag } from "carbon-components-svelte";
 
+  export let labelText: string = "";
+  export let placeholder: string = "";
+  export let tags: string[] = [];
+
   let input = "";
-  let tags: string[] = [];
 
   const handleKeydown = (event) => {
     if (event.key === "Enter") {
@@ -24,7 +27,8 @@
 
 <div>
   <TextInput
-    labelText="ยาที่แพ้"
+    {labelText}
+    {placeholder}
     on:keydown={handleKeydown}
     on:change={handleChange}
     bind:value={input}
