@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Form, Button } from "carbon-components-svelte";
-  import { uploadImage } from "../api/patient";
+  import { uploadImage, submitForm } from "../api/patient";
   import type { UploadImageSuccessResponseData } from "../api/patient";
   import ImageUploader from "../components/ImageUploader.svelte";
   import InfoForm from "../components/InfoForm.svelte";
@@ -8,12 +8,14 @@
   import LabForm from "../components/LabForm.svelte";
   import Questionnaire from "../components/Questionnaire.svelte";
   import VaccineHistoryForm from "../components/VaccineHistoryForm.svelte";
+  import { getTokenSubscription } from "../stores/auth";
 
   let infoForm;
   let locationForm;
   let labForm;
   let vaccineHistoryForm;
   let questionnaire;
+  let token;
 
   let imageUrl = {
     uploadedNationalIdCard: "",
@@ -45,8 +47,14 @@
     ...questionnaire,
   };
 
-  const handleOnSubmit = () => {
-    console.log(form);
+  const tokenSubscription = getTokenSubscription();
+  tokenSubscription((value) => {
+    token = value;
+  });
+
+  const handleOnSubmit = async () => {
+    const response = await submitForm(form, token);
+    console.log(response);
   };
 </script>
 
@@ -89,6 +97,8 @@
 <style scoped>
   main {
     padding: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   .patient-form {

@@ -25,10 +25,10 @@
   const handleLoginClick = async () => {
     try {
       const numberOtp = Number.parseInt(otp);
-      const result = await verifyOtp(numberOtp, requestId, mobileNumber);
+      const response = await verifyOtp(numberOtp, requestId, mobileNumber);
 
       setIsAuthenticated(true);
-      setToken(result.data.token);
+      setToken(response.data.results.token);
       router.goto("/form");
     } catch (error) {
       console.log(error);

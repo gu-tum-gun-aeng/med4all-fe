@@ -31,27 +31,31 @@
   <h3>ผลการตรวจ</h3>
   <Row>
     <Column>
-      <Checkbox labelText="มีผลการตรวจ ATK" bind:checked={isAtkPositive} />
+      <Checkbox
+        labelText="ผลการตรวจ ATK เป็นบวก"
+        bind:checked={isAtkPositive}
+      />
     </Column>
   </Row>
   <Row>
     <Column>
-      <Checkbox labelText="มีผลการตรวจ RT-PCR" bind:checked={isRtPcrPositive} />
+      <Checkbox
+        labelText="ผลการตรวจ RT-PCR เป็นบวก"
+        bind:checked={isRtPcrPositive}
+      />
     </Column>
   </Row>
-  {#if isAtkPositive || isRtPcrPositive}
-    <Row>
-      <Column>
-        <DatePicker datePickerType="single" on:change>
-          <DatePickerInput
-            labelText="วันที่ทราบผลการตรวจ"
-            placeholder="mm/dd/yyyy"
-            bind:value={labTestWhen}
-          />
-        </DatePicker>
-      </Column>
-    </Row>
-  {/if}
+  <Row>
+    <Column>
+      <DatePicker datePickerType="single" on:change>
+        <DatePickerInput
+          labelText="วันที่ทราบผลการตรวจ"
+          placeholder="mm/dd/yyyy"
+          bind:value={labTestWhen}
+        />
+      </DatePicker>
+    </Column>
+  </Row>
   <h3>การได้รับยา</h3>
   <Row>
     <Column>
