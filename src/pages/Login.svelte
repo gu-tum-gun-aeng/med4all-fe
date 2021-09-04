@@ -16,7 +16,7 @@
       setRequestId(response.data.results.requestId);
       router.goto("/verifyotp");
     } catch (err) {
-      if (err.response.data.status === 500) {
+      if (err.response.data.status === 500 || err.response.data.status === 400) {
         errorDisplay = Errors[err.response.data.name];
       }
     }
