@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { onMount } from "svelte";
+  import { router } from "tinro";
   import { Form, Button } from "carbon-components-svelte";
   import { uploadImage, submitForm } from "../api/patient";
   import type { UploadImageSuccessResponseData } from "../api/patient";
@@ -8,7 +10,7 @@
   import LabForm from "../components/LabForm.svelte";
   import Questionnaire from "../components/Questionnaire.svelte";
   import VaccineHistoryForm from "../components/VaccineHistoryForm.svelte";
-  import { getTokenSubscription } from "../stores/auth";
+  import { getTokenSubscription, getIsAuthenticatedSubscription } from "../stores/auth";
 
   let infoForm;
   let locationForm;
@@ -16,6 +18,7 @@
   let vaccineHistoryForm;
   let questionnaire;
   let token;
+  let auth;
 
   let imageUrl = {
     uploadedNationalIdCard: "",
@@ -51,11 +54,21 @@
   tokenSubscription((value) => {
     token = value;
   });
+  const isAuthenticatedSubscription = getIsAuthenticatedSubscription();
+  isAuthenticatedSubscription((value) => {
+    auth = value;
+  })
 
   const handleOnSubmit = async () => {
     const response = await submitForm(form, token);
     console.log(response);
   };
+
+  onMount(() => {
+    if (!token && !auth) {
+      router.goto("/");
+    }
+  });
 </script>
 
 <main>
