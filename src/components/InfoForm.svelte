@@ -10,6 +10,7 @@
     Select,
     SelectItem,
   } from "carbon-components-svelte";
+  import Validator from "../util/validator"
 
   let certificateId: string = "";
   let name: string = "";
@@ -39,6 +40,20 @@
       remark,
     };
   }
+
+  type FormError = {
+    [key: string]: string | boolean
+  }
+
+  let formError: FormError = {
+    certificateId: false,
+    name: false,
+    surname: false
+  };
+
+  const onBlurRequired = (key: string) => {
+    formError[key] = Validator.requiredValue(infoForm[key])
+  }
 </script>
 
 <div class="form-basic-info">
@@ -48,6 +63,9 @@
         labelText="เลขบัตรประชาชน หรือ รหัสประจำตัวคนต่างด้าว หรือ เลขpassport"
         placeholder=""
         bind:value={certificateId}
+        on:blur={() => onBlurRequired("certificateId")}
+        invalid={!!formError.certificateId}
+        invalidText={`${formError.certificateId}`}
       />
     </Column>
   </Row>
@@ -57,6 +75,9 @@
         labelText="ชื่อจริง (first name)"
         placeholder=""
         bind:value={name}
+        on:blur={() => onBlurRequired("name")}
+        invalid={!!formError.name}
+        invalidText={`${formError.name}`}
       />
     </Column>
   </Row>
@@ -66,6 +87,9 @@
         labelText="นามสกุล (last name)"
         placeholder=""
         bind:value={surname}
+        on:blur={() => onBlurRequired("surname")}
+        invalid={!!formError.surname}
+        invalidText={`${formError.surname}`}
       />
     </Column>
   </Row>
