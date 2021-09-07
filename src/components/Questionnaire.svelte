@@ -317,14 +317,14 @@
   }
 
   h2 {
-    color: black;
+    color: white;
     font-size: 20px;
     font-family: "IBM Plex Sans Thai";
     font-weight: 400;
   }
 
   h3 {
-    color: #525252;
+    color: rgb(206, 206, 206);
     font-size: 15px;
     font-family: "IBM Plex Sans Thai";
     font-weight: 400;

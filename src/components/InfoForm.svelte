@@ -10,7 +10,7 @@
     Select,
     SelectItem,
   } from "carbon-components-svelte";
-  import Validator from "../util/validator"
+  import Validator from "../util/validator";
 
   let certificateId: string = "";
   let name: string = "";
@@ -42,18 +42,21 @@
   }
 
   type FormError = {
-    [key: string]: string | boolean
-  }
+    [key: string]: string | boolean;
+  };
 
-  let formError: FormError = {
+  export let formError: FormError = {
     certificateId: false,
     name: false,
-    surname: false
+    surname: false,
   };
 
   const onBlurRequired = (key: string) => {
-    formError[key] = Validator.requiredValue(infoForm[key])
-  }
+    formError[key] = Validator.requiredValue(infoForm[key]);
+    if (!formError[key]) {
+      formError[key] = Validator.checkID(infoForm[key]);
+    }
+  };
 </script>
 
 <div class="form-basic-info">

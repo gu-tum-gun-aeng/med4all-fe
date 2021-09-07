@@ -67,7 +67,7 @@
   }
 
   h1 {
-    color: black;
+    color: white;
     font-size: 32px;
     font-weight: 400;
     font-family: "IBM Plex Sans Thai";

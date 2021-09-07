@@ -16,7 +16,10 @@
       setRequestId(response.data.results.requestId);
       router.goto("/verifyotp");
     } catch (err) {
-      if (err.response.data.status === 500 || err.response.data.status === 400) {
+      if (
+        err.response.data.status === 500 ||
+        err.response.data.status === 400
+      ) {
         errorDisplay = Errors[err.response.data.name];
       }
     }
@@ -55,7 +58,7 @@
   }
 
   h1 {
-    color: black;
+    color: white;
     font-size: 32px;
     font-weight: 400;
     font-family: "IBM Plex Sans Thai";

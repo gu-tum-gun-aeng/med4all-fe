@@ -10,7 +10,11 @@
   import LabForm from "../components/LabForm.svelte";
   import Questionnaire from "../components/Questionnaire.svelte";
   import VaccineHistoryForm from "../components/VaccineHistoryForm.svelte";
-  import { getTokenSubscription, getIsAuthenticatedSubscription } from "../stores/auth";
+  import {
+    getTokenSubscription,
+    getIsAuthenticatedSubscription,
+  } from "../stores/auth";
+  import Validator from "../util/validator";
 
   let infoForm;
   let locationForm;
@@ -19,6 +23,7 @@
   let questionnaire;
   let token;
   let auth;
+  let formError;
 
   let imageUrl = {
     uploadedNationalIdCard: "",
@@ -57,9 +62,23 @@
   const isAuthenticatedSubscription = getIsAuthenticatedSubscription();
   isAuthenticatedSubscription((value) => {
     auth = value;
-  })
+  });
 
   const handleOnSubmit = async () => {
+    const formToValidate = [
+      "certificateId",
+      "name",
+      "surname"
+    ]
+    formToValidate.forEach((key) => {
+      formError[key] = Validator.requiredValue(infoForm[key]);
+    })
+    formError["certificateId"] = Validator.checkID(infoForm["certificateId"]);
+
+    if (Object.values(formError).some(value => `${value}`.length > 0 && value !== false)) {
+      return;
+    }
+
     const response = await submitForm(form, token);
     console.log(response);
   };
@@ -95,7 +114,7 @@
       />
     </div>
     <Form on:submit={handleOnSubmit}>
-      <InfoForm bind:infoForm />
+      <InfoForm bind:infoForm bind:formError/>
       <LocationForm bind:locationForm />
       <LabForm bind:labForm />
       <VaccineHistoryForm {vaccineHistoryForm} />
@@ -123,7 +142,7 @@
   }
 
   h1 {
-    color: black;
+    color: white;
     font-size: 40px;
     font-family: "IBM Plex Sans Thai";
     font-weight: 400;

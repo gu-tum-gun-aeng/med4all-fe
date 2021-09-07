@@ -1,4 +1,4 @@
-import "carbon-components-svelte/css/white.css";
+import "carbon-components-svelte/css/g100.css";
 import App from "./App.svelte";
 import Sentry from "./util/sentry";
 
