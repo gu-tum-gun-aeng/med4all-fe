@@ -65,17 +65,17 @@
   });
 
   const handleOnSubmit = async () => {
-    const formToValidate = [
-      "certificateId",
-      "name",
-      "surname"
-    ]
+    const formToValidate = ["certificateId", "name", "surname"];
     formToValidate.forEach((key) => {
       formError[key] = Validator.requiredValue(infoForm[key]);
-    })
+    });
     formError["certificateId"] = Validator.checkID(infoForm["certificateId"]);
 
-    if (Object.values(formError).some(value => `${value}`.length > 0 && value !== false)) {
+    if (
+      Object.values(formError).some(
+        (value) => `${value}`.length > 0 && value !== false
+      )
+    ) {
       return;
     }
 
@@ -114,7 +114,7 @@
       />
     </div>
     <Form on:submit={handleOnSubmit}>
-      <InfoForm bind:infoForm bind:formError/>
+      <InfoForm bind:infoForm bind:formError />
       <LocationForm bind:locationForm />
       <LabForm bind:labForm />
       <VaccineHistoryForm {vaccineHistoryForm} />
