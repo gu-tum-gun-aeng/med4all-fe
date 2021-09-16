@@ -71,15 +71,57 @@
     });
     formError["certificateId"] = Validator.checkID(infoForm["certificateId"]);
 
-    if (
-      Object.values(formError).some(
-        (value) => `${value}`.length > 0 && value !== false
-      )
-    ) {
+    const isValueGotSomeErrors = Object.values(formError).some(
+      (value) => `${value}`.length > 0 && value !== false
+    );
+
+    if (isValueGotSomeErrors) {
       return;
     }
 
-    const response = await submitForm(form, token);
+    // custodiaPhone,
+    // checkInDate,
+    // checkOutDate,
+    // sexId,
+    // lineId,
+    // homeTown,
+    // remark,
+
+    const submittingForm = {
+      certificateId: form.certificateId,
+      certificateType: "",
+      name: form.name,
+      surname: form.surname,
+      ageYear: 26,
+      patientPhone: form.patientPhone,
+      weightKg: 70,
+      medicalInfo: {
+        isFavipiravirReceived: false,
+        isPregnant: false,
+        isDiseaseUncontrolledDm: false,
+        isDiseaseCirrhosis: false,
+        isMedicineRequested: true,
+        isBypassScreening: true,
+      },
+      address: {
+        provinceCode: 1,
+        districtCode: 1,
+        subDistrictCode: 1,
+        moo: "4",
+        road: "bangwak",
+        alley: "sss",
+        soi: "bangwak 2",
+        village: "my Village",
+        bangkokZoneCode: 1,
+        zipCode: 10867,
+        building: "",
+        note: "",
+      },
+    };
+
+    console.log(form);
+
+    const response = await submitForm(submittingForm, token);
     console.log(response);
   };
 

@@ -1,5 +1,7 @@
 {
    "validation errors": "กรุณากรอกใหม่ เบอร์โทรไม่ถูกต้อง หรือเบอร์คุณไม่ได้อยู่ในระบบ",
    "Concurrent verifications to the same number are not allowed": "กรุณารอสัก 1 นาที แล้วลองใหม่ (เพื่อรอให้ otp ตัวเก่าหมดอายุ)",
-   "You are not the volunteer.": "ขออภัย เบอร์คุณยังไม่ได้ลงทะเบียนอาสาสมัคร"
+   "You are not the volunteer.": "ขออภัย เบอร์คุณยังไม่ได้ลงทะเบียนอาสาสมัคร",
+   "The code provided does not match the expected value": "",
+   "A wrong code was provided too many times. Workflow terminated": ""
 }
